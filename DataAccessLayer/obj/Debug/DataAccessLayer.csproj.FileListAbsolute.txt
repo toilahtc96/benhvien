@@ -1,0 +1,10 @@
+D:\Xulianh\DataAccessLayer\bin\Debug\DataAccessLayer.dll.config
+D:\Xulianh\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+D:\Xulianh\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+D:\Xulianh\DataAccessLayer\bin\Debug\EntityFramework.dll
+D:\Xulianh\DataAccessLayer\bin\Debug\WCF.BussinessObject.dll
+D:\Xulianh\DataAccessLayer\bin\Debug\WCF.BussinessObject.pdb
+D:\Xulianh\DataAccessLayer\bin\Debug\EntityFramework.xml
+D:\Xulianh\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
+D:\Xulianh\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+D:\Xulianh\DataAccessLayer\obj\Debug\DataAccessLayer.pdb

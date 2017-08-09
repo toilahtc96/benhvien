@@ -1,0 +1,109 @@
+﻿@model WCF.BussinessObject.EntityObject.ServiceObject
+@{
+            ViewBag.Title = "EditHomePage";
+            Layout = "~/Areas/admin/Views/Shared/LayOut.cshtml";
+}
+
+@using (Html.BeginForm("EditHomePage", "EditAdmin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.HiddenFor(m => m.ID)
+    <table id="example1" class="table table-bordered table-striped dataTable" role="grid" aria-describedby="example1_info">
+        <thead>
+            <tr role="row">
+                <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending" style="width: 110px;">@Html.DisplayNameFor(m => m.BackGround)</th>
+                <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending" style="width: 110px;">@Html.DisplayNameFor(m => m.LogoImage)</th>
+                <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending" style="width: 110px;">@Html.DisplayNameFor(m => m.Image)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr role="row" class="odd">
+                @Html.HiddenFor(m => m.LogoImage)
+                @Html.HiddenFor(m => m.BackGround)
+                @Html.HiddenFor(m => m.Image)
+                <td>
+                    <input id="BgImages" name="BackGround" type="file" value="">
+                    <img src="@Model.BackGround" alt="" height="200" width="300">
+                </td>
+                <td>
+                    <input id="BgImages" name="LogoImage" type="file" value="">
+                    <img src="@Model.LogoImage" alt="" height="100" width="300">
+                </td>
+                <td>
+                    <input id="BgImages" name="Image" type="file" value="">
+                    <img src="@Model.Image" alt="" height="200" width="300">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="form-group" style="margin-bottom:30px;">
+        <b>@Html.DisplayNameFor(m => m.TittleDichVu)</b>
+        @Html.TextBoxFor(m => m.TittleDichVu, new { @class = "form-control", placeholder = "Nhập tiêu đề ..." })
+    </div>
+    <div class="form-group" style="margin-bottom:30px;">
+        <span><b>Mô Tả </b></span> <b>@Html.DisplayNameFor(m => m.TittleDichVu)</b>
+        @Html.TextAreaFor(m => m.DescriptionDichVu, new { @class = "form-control", placeholder = "Nhập tiêu đề ..." })
+    </div>
+                <div class="form-group" style="margin-bottom:30px;">
+                    <b>@Html.DisplayNameFor(m => m.TittleGioiThieu)</b>
+                    @Html.TextBoxFor(m => m.TittleGioiThieu, new { @class = "form-control", placeholder = "Nhập tiêu đề ..." })
+                </div>
+                <div class="form-group" style="margin-bottom:30px;">
+                    <span><b>Mô Tả </b></span> <b>@Html.DisplayNameFor(m => m.TittleGioiThieu)</b>
+                    @Html.TextAreaFor(m => m.DescriptionGioiThieu, new { @class = "form-control", placeholder = "Nhập tiêu đề ..." })
+                </div>
+                <div class="form-group" style="margin-bottom:30px;">
+                    <b>@Html.DisplayNameFor(m => m.TittlePhongKham)</b>
+                    @Html.TextBoxFor(m => m.TittlePhongKham, new { @class = "form-control", placeholder = "Nhập tiêu đề ..." })
+                </div>
+                <div class="form-group" style="margin-bottom:30px;">
+                    <span><b>Mô Tả </b></span> <b>@Html.DisplayNameFor(m => m.TittlePhongKham)</b>
+                    @Html.TextAreaFor(m => m.DescriptionPhongKham, new { @class = "form-control", placeholder = "Nhập tiêu đề ..." })
+                </div>
+                <div class="form-group" style="margin-bottom:30px;">
+                    <b>@Html.DisplayNameFor(m => m.TittleCoSoVatChat)</b>
+                    @Html.TextBoxFor(m => m.TittleCoSoVatChat, new { @class = "form-control", placeholder = "Nhập tiêu đề ..." })
+                </div>
+                <div class="form-group" style="margin-bottom:30px;">
+                    <span><b>Mô Tả </b></span> <b>@Html.DisplayNameFor(m => m.TittleCoSoVatChat)</b>
+                    @Html.TextAreaFor(m => m.DescriptionCosoVatChat, new { @class = "form-control", placeholder = "Nhập tiêu đề ..." })
+                </div>
+                <div class="form-group" style="margin-bottom:30px;">
+                    <b>@Html.DisplayNameFor(m => m.TittleChuyenKhoa)</b>
+                    @Html.TextBoxFor(m => m.TittleChuyenKhoa, new { @class = "form-control", placeholder = "Nhập tiêu đề ..." })
+                </div>
+                <div class="form-group" style="margin-bottom:30px;">
+                    <span><b>Mô Tả </b></span> <b>@Html.DisplayNameFor(m => m.TittleChuyenKhoa)</b>
+                    @Html.TextAreaFor(m => m.DescriptionChuyenKhoa, new { @class = "form-control", placeholder = "Nhập tiêu đề ..." })
+                </div>
+                <div class="form-group" style="margin-bottom:30px;">
+                    <b>@Html.DisplayNameFor(m => m.TittleLienHe)</b>
+                    @Html.TextBoxFor(m => m.TittleLienHe, new { @class = "form-control", placeholder = "Nhập tiêu đề ..." })
+                </div>
+                <div class="form-group" style="margin-bottom:30px;">
+                    <span><b>Mô Tả </b></span> <b>@Html.DisplayNameFor(m => m.TittleLienHe)</b>
+                    @Html.TextAreaFor(m => m.DescriptionLienHe, new { @class = "form-control", placeholder = "Nhập tiêu đề ..." })
+                </div>
+                <div class="form-group" style="margin-bottom:30px;">
+                    <b>@Html.DisplayNameFor(m => m.Address)</b>
+
+                    @Html.TextBoxFor(m => m.Address, new { @class = "form-control", placeholder = "Nhập tiêu đề ..." })
+                </div>
+                <div class="form-group" style="margin-bottom:30px;">
+                    <b>@Html.DisplayNameFor(m => m.HotLine)</b>
+                    @Html.TextBoxFor(m => m.HotLine, new { @class = "form-control", placeholder = "Nhập tiêu đề ..." })
+                </div>
+                <div class="form-group" style="margin-bottom:30px;">
+                    <b>@Html.DisplayNameFor(m => m.Phone)</b>
+                    @Html.TextBoxFor(m => m.Phone, new { @class = "form-control", placeholder = "Nhập tiêu đề ..." })
+                </div>
+                <div class="form-group" style="margin-bottom:30px;">
+                    <b>@Html.DisplayNameFor(m => m.TittleDichVu)</b>
+                    @Html.TextBoxFor(m => m.TittleDichVu, new { @class = "form-control", placeholder = "Nhập tiêu đề ..." })
+                </div>
+                <div class="form-group" style="margin-bottom:30px;">
+                    <b>@Html.DisplayNameFor(m => m.Slogan)</b>
+                    @Html.TextBoxFor(m => m.Slogan, new { @class = "form-control", placeholder = "Nhập tiêu đề ..." })
+                </div>
+                <input type="submit" value="Xác Nhận" class="btn btn-info btn-flat" />
+}

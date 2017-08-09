@@ -1,0 +1,12 @@
+﻿@model List<WCF.BussinessObject.EntityObject.MedicalObject>
+<div>
+    @{foreach (var item in Model)
+        {
+            <div class='col-md-3 text-center c1 SHOW_popup' data='/Benh-vo-sinh-349093'>
+                <img src='@item.Image' alt='@item.Name'>
+                <h3><span class='id-color'>@item.Name</span></h3>
+                <p>@item.Description</p>
+            </div>
+        }
+    }
+</div>

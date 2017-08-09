@@ -1,0 +1,47 @@
+﻿@model WCF.BussinessObject.EntityObject.MenuObject
+<aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+        <!-- sidebar menu: : style can be found in sidebar.less -->
+        <ul class="sidebar-menu">
+            <li class="header">Quản Lí Trang Web</li>
+            <li class="active treeview">
+                <a href=@Url.Action("EditMenuHeader","EditHeader")>
+                    <i class="fa fa-dashboard"></i> <span>Quản Lí Thanh Menu</span>
+                </a>
+            </li>
+            <li class="treeview">
+        <a href=@Url.Action("EditHomePage", "EditAdmin")>
+            <i class="fa fa-files-o"></i>
+            <span>Quản Lí Nội Dung Trang Chủ</span>
+        </a>
+    </li>
+            <li class="treeview">
+                <a href=@Url.Action("EquipmentAdminView","EquipmentAdmin")>
+                    <i class="fa fa-files-o"></i>
+                    <span>Quản Lí Cơ Sở Vật Chất</span>
+               </a>
+            </li>
+            <li class="treeview">
+                <a href=@Url.Action("DoctorAdminView","Doctor")>
+                    <i class="fa fa-files-o"></i>
+                    <span>Quản Lí Bác Sĩ</span>
+                </a>
+            </li>
+
+    <li class="treeview">
+        <a href=@Url.Action("AdminMedical","EditMedical")>
+            <i class="fa fa-pie-chart"></i>
+            <span>Quản Lí Dịch Vụ</span>
+        </a>
+    </li>
+    <li class="treeview">
+        <a href=@Url.Action("EditLienHe","EditLienHe")>
+            <i class="fa fa-laptop"></i>
+            <span>Quản Lí Liên Hệ</span>
+        </a>
+    </li>
+        </ul>
+    </section>
+    <!-- /.sidebar -->
+</aside>

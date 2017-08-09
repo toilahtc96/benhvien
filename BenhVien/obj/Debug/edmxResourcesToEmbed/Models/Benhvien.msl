@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="benhvienModelStoreContainer" CdmEntityContainer="benhvienEntities">
+    <EntitySetMapping Name="Doctors">
+      <EntityTypeMapping TypeName="benhvienModel.Doctor">
+        <MappingFragment StoreEntitySet="Doctors">
+          <ScalarProperty Name="MedicalName" ColumnName="MedicalName" />
+          <ScalarProperty Name="IDkhoa" ColumnName="IDkhoa" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Images" ColumnName="Images" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Equipments">
+      <EntityTypeMapping TypeName="benhvienModel.Equipment">
+        <MappingFragment StoreEntitySet="Equipments">
+          <ScalarProperty Name="Images" ColumnName="Images" />
+          <ScalarProperty Name="Details" ColumnName="Details" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Feedbacks">
+      <EntityTypeMapping TypeName="benhvienModel.Feedback">
+        <MappingFragment StoreEntitySet="Feedbacks">
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="Skype" ColumnName="Skype" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="CustommerName" ColumnName="CustommerName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Medicals">
+      <EntityTypeMapping TypeName="benhvienModel.Medical">
+        <MappingFragment StoreEntitySet="Medicals">
+          <ScalarProperty Name="Images" ColumnName="Images" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Menus">
+      <EntityTypeMapping TypeName="benhvienModel.Menu">
+        <MappingFragment StoreEntitySet="Menu">
+          <ScalarProperty Name="Slogan" ColumnName="Slogan" />
+          <ScalarProperty Name="BackGround" ColumnName="BackGround" />
+          <ScalarProperty Name="MenuItem6" ColumnName="MenuItem6" />
+          <ScalarProperty Name="MenuItem5" ColumnName="MenuItem5" />
+          <ScalarProperty Name="MenuItem4" ColumnName="MenuItem4" />
+          <ScalarProperty Name="MenuItem3" ColumnName="MenuItem3" />
+          <ScalarProperty Name="MenuItem2" ColumnName="MenuItem2" />
+          <ScalarProperty Name="MenuItem1" ColumnName="MenuItem1" />
+          <ScalarProperty Name="LogoImage" ColumnName="LogoImage" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Services">
+      <EntityTypeMapping TypeName="benhvienModel.Service">
+        <MappingFragment StoreEntitySet="Services">
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="HotLine" ColumnName="HotLine" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Images" ColumnName="Images" />
+          <ScalarProperty Name="DetailLienhe" ColumnName="DetailLienhe" />
+          <ScalarProperty Name="DetailChuyenkhoa" ColumnName="DetailChuyenkhoa" />
+          <ScalarProperty Name="DetailCosovatchat" ColumnName="DetailCosovatchat" />
+          <ScalarProperty Name="DetailPhongkham" ColumnName="DetailPhongkham" />
+          <ScalarProperty Name="DetailGioithieu" ColumnName="DetailGioithieu" />
+          <ScalarProperty Name="DetailDichvu" ColumnName="DetailDichvu" />
+          <ScalarProperty Name="DescriptionLienHe" ColumnName="DescriptionLienHe" />
+          <ScalarProperty Name="DescriptionChuyenKhoa" ColumnName="DescriptionChuyenKhoa" />
+          <ScalarProperty Name="DescriptionCosovatchat" ColumnName="DescriptionCosovatchat" />
+          <ScalarProperty Name="DescriptionPhongkham" ColumnName="DescriptionPhongkham" />
+          <ScalarProperty Name="DescriptionGioithieu" ColumnName="DescriptionGioithieu" />
+          <ScalarProperty Name="DescriptionDichvu" ColumnName="DescriptionDichvu" />
+          <ScalarProperty Name="TitleLienhe" ColumnName="TitleLienhe" />
+          <ScalarProperty Name="TitleChuyenkhoa" ColumnName="TitleChuyenkhoa" />
+          <ScalarProperty Name="TitleCosovatchat" ColumnName="TitleCosovatchat" />
+          <ScalarProperty Name="TitlePhongKham" ColumnName="TitlePhongKham" />
+          <ScalarProperty Name="TitleGioiThieu" ColumnName="TitleGioiThieu" />
+          <ScalarProperty Name="TitleDichvu" ColumnName="TitleDichvu" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="benhvienModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="definition" ColumnName="definition" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

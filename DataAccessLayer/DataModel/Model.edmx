@@ -1,0 +1,1472 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="furniShopModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+        <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+          <Parameter Name="version" Type="int" Mode="In" />
+          <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+        </Function>
+        <Function Name="SP_Colors_DELETE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ColorID" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="SP_Colors_GetAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_Colors_GetByColorID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ColorID" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="SP_Colors_INSERT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ColorID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="ColorName" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="SP_Colors_UPDATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ColorID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="ColorName" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="SP_Companys_DELETE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="CompanyID" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="SP_Companys_GetAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_Companys_GetByCompanyID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="CompanyID" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="SP_Companys_INSERT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="CompanyID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="CompanyName" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="SP_Companys_UPDATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="CompanyID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="CompanyName" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="SP_Contacts_DELETE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ContactID" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="SP_Contacts_GetAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_Contacts_GetByContactID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ContactID" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="SP_Contacts_INSERT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ContactID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="Name" Type="varchar" Mode="In" />
+          <Parameter Name="Email" Type="varchar" Mode="In" />
+          <Parameter Name="Phone" Type="varchar" Mode="In" />
+          <Parameter Name="Message" Type="varchar" Mode="In" />
+          <Parameter Name="CreateDate" Type="date" Mode="In" />
+        </Function>
+        <Function Name="SP_Contacts_UPDATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ContactID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="Name" Type="varchar" Mode="In" />
+          <Parameter Name="Email" Type="varchar" Mode="In" />
+          <Parameter Name="Phone" Type="varchar" Mode="In" />
+          <Parameter Name="Message" Type="varchar" Mode="In" />
+          <Parameter Name="CreateDate" Type="date" Mode="In" />
+        </Function>
+        <Function Name="SP_Countrys_DELETE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="CountryID" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="SP_Countrys_GetAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_Countrys_GetByCountryID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="CountryID" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="SP_Countrys_INSERT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="CountryID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="CountryName" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="SP_Countrys_UPDATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="CountryID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="CountryName" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+          <Parameter Name="version" Type="int" Mode="In" />
+          <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+        </Function>
+        <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_Footers_DELETE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="FooterID" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="SP_Footers_GetAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_Footers_GetByFooterID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="FooterID" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="SP_Footers_INSERT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="FooterID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="FooterName" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="SP_Footers_UPDATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="FooterID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="FooterName" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_Images_DELETE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ImageID" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="SP_Images_GetAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_Images_GetByImageID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ImageID" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="SP_Images_INSERT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ImageID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="URL" Type="varchar" Mode="In" />
+          <Parameter Name="BannerFlag" Type="bit" Mode="In" />
+          <Parameter Name="LogoFlag" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="SP_Images_UPDATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ImageID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="URL" Type="varchar" Mode="In" />
+          <Parameter Name="BannerFlag" Type="bit" Mode="In" />
+          <Parameter Name="LogoFlag" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="SP_MenuGroups_DELETE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="MenuGroupID" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="SP_MenuGroups_GetAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_MenuGroups_GetByMenuGroupID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="MenuGroupID" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="SP_MenuGroups_INSERT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="MenuGroupID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="MenuGroupName" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="SP_MenuGroups_UPDATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="MenuGroupID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="MenuGroupName" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="SP_MenuItems_DELETE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="MenuItemID" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="SP_MenuItems_GetAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_MenuItems_GetByMenuItemID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="MenuItemID" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="SP_MenuItems_INSERT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="MenuItemID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="MenuItemName" Type="varchar" Mode="In" />
+          <Parameter Name="Position" Type="int" Mode="In" />
+          <Parameter Name="URL" Type="varchar" Mode="In" />
+          <Parameter Name="GroupID" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="SP_MenuItems_UPDATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="MenuItemID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="MenuItemName" Type="varchar" Mode="In" />
+          <Parameter Name="Position" Type="int" Mode="In" />
+          <Parameter Name="URL" Type="varchar" Mode="In" />
+          <Parameter Name="GroupID" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="SP_OrderDetails_DELETE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="OrderDetailID" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="SP_OrderDetails_GetAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_OrderDetails_GetByOrderDetailID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="OrderDetailID" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="SP_OrderDetails_INSERT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="OrderDetailID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="ProductID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="OrderID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="Quantity" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_OrderDetails_UPDATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="OrderDetailID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="ProductID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="OrderID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="Quantity" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_Orders_DELETE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="OrderID" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="SP_Orders_GetAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_Orders_GetByOrderID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="OrderID" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="SP_Orders_INSERT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="OrderID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="UserID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="DateTime" Type="date" Mode="In" />
+          <Parameter Name="CreateBy" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="SP_Orders_UPDATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="OrderID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="UserID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="DateTime" Type="date" Mode="In" />
+          <Parameter Name="CreateBy" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="SP_ProductCategorys_DELETE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ProductCategoryID" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="SP_ProductCategorys_GetAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_ProductCategorys_GetByProductCategoryID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ProductCategoryID" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="SP_ProductCategorys_INSERT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ProductCategoryID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="CategoryName" Type="varchar" Mode="In" />
+          <Parameter Name="Description" Type="varchar(max)" Mode="In" />
+        </Function>
+        <Function Name="SP_ProductCategorys_UPDATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ProductCategoryID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="CategoryName" Type="varchar" Mode="In" />
+          <Parameter Name="Description" Type="varchar(max)" Mode="In" />
+        </Function>
+        <Function Name="SP_ProductColors_DELETE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ProductColorID" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="SP_ProductColors_GetAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_ProductColors_GetByProductColorID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ProductColorID" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="SP_ProductColors_INSERT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ProductColorID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="ColorID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="ProductID" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="SP_ProductColors_UPDATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ProductColorID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="ColorID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="ProductID" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="SP_ProductImages_DELETE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ImageProductID" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="SP_ProductImages_GetAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_ProductImages_GetByImageProductID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ImageProductID" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="SP_ProductImages_INSERT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ImageProductID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="ProductID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="URL" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="SP_ProductImages_UPDATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ImageProductID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="ProductID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="URL" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="SP_Products_DELETE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ProductID" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="SP_Products_GetAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_Products_GetByProductID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ProductID" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="SP_Products_INSERT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ProductID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="ProductName" Type="varchar" Mode="In" />
+          <Parameter Name="Price" Type="decimal" Mode="In" />
+          <Parameter Name="HomeFlag" Type="bit" Mode="In" />
+          <Parameter Name="Size" Type="varchar" Mode="In" />
+          <Parameter Name="Detail" Type="varchar(max)" Mode="In" />
+          <Parameter Name="Sale" Type="float" Mode="In" />
+          <Parameter Name="CompanyID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="CategoryID" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="SP_Products_UPDATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ProductID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="ProductName" Type="varchar" Mode="In" />
+          <Parameter Name="Price" Type="decimal" Mode="In" />
+          <Parameter Name="HomeFlag" Type="bit" Mode="In" />
+          <Parameter Name="Size" Type="varchar" Mode="In" />
+          <Parameter Name="Detail" Type="varchar(max)" Mode="In" />
+          <Parameter Name="Sale" Type="float" Mode="In" />
+          <Parameter Name="CompanyID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="CategoryID" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="SP_ProductTags_DELETE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ProductTagID" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="SP_ProductTags_GetAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_ProductTags_GetByProductTagID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ProductTagID" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="SP_ProductTags_INSERT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ProductTagID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="ProductID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="TagID" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="SP_ProductTags_UPDATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ProductTagID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="ProductID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="TagID" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+          <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="SP_Roles_DELETE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="RoleID" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="SP_Roles_GetAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_Roles_GetByRoleID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="RoleID" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="SP_Roles_INSERT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="RoleID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="RoleName" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="SP_Roles_UPDATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="RoleID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="RoleName" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="SP_ShopAddress_DELETE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ShopAddressID" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="SP_ShopAddress_GetAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_ShopAddress_GetByShopAddressID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ShopAddressID" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="SP_ShopAddress_INSERT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ShopAddressID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="Address" Type="varchar(max)" Mode="In" />
+        </Function>
+        <Function Name="SP_ShopAddress_UPDATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ShopAddressID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="Address" Type="varchar(max)" Mode="In" />
+        </Function>
+        <Function Name="SP_Tags_DELETE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="TagID" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="SP_Tags_GetAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_Tags_GetByTagID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="TagID" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="SP_Tags_INSERT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="TagID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="TagName" Type="varchar" Mode="In" />
+          <Parameter Name="Type" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="SP_Tags_UPDATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="TagID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="TagName" Type="varchar" Mode="In" />
+          <Parameter Name="Type" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_Users_DELETE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserID" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="SP_Users_GetAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_Users_GetByUserID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserID" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="SP_Users_INSERT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="FirstName" Type="varchar" Mode="In" />
+          <Parameter Name="LastName" Type="varchar" Mode="In" />
+          <Parameter Name="Email" Type="varchar" Mode="In" />
+          <Parameter Name="PassWord" Type="varchar" Mode="In" />
+          <Parameter Name="Mobile" Type="varchar" Mode="In" />
+          <Parameter Name="Address" Type="varchar" Mode="In" />
+          <Parameter Name="RoleID" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="SP_Users_UPDATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="FirstName" Type="varchar" Mode="In" />
+          <Parameter Name="LastName" Type="varchar" Mode="In" />
+          <Parameter Name="Email" Type="varchar" Mode="In" />
+          <Parameter Name="PassWord" Type="varchar" Mode="In" />
+          <Parameter Name="Mobile" Type="varchar" Mode="In" />
+          <Parameter Name="Address" Type="varchar" Mode="In" />
+          <Parameter Name="RoleID" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <EntityContainer Name="furniShopModelStoreContainer" />
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="furniShopModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="furniShopEntities" annotation:LazyLoadingEnabled="true" >
+          <FunctionImport Name="sp_alterdiagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+            <Parameter Name="version" Mode="In" Type="Int32" />
+            <Parameter Name="definition" Mode="In" Type="Binary" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Colors_DELETE">
+            <Parameter Name="ColorID" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Colors_GetAll" ReturnType="Collection(furniShopModel.SP_Colors_GetAll_Result)" />
+          <FunctionImport Name="SP_Colors_GetByColorID" ReturnType="Collection(furniShopModel.SP_Colors_GetByColorID_Result)">
+            <Parameter Name="ColorID" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Colors_INSERT">
+            <Parameter Name="ColorID" Mode="In" Type="Guid" />
+            <Parameter Name="ColorName" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Colors_UPDATE">
+            <Parameter Name="ColorID" Mode="In" Type="Guid" />
+            <Parameter Name="ColorName" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Companys_DELETE">
+            <Parameter Name="CompanyID" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Companys_GetAll" ReturnType="Collection(furniShopModel.SP_Companys_GetAll_Result)" />
+          <FunctionImport Name="SP_Companys_GetByCompanyID" ReturnType="Collection(furniShopModel.SP_Companys_GetByCompanyID_Result)">
+            <Parameter Name="CompanyID" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Companys_INSERT">
+            <Parameter Name="CompanyID" Mode="In" Type="Guid" />
+            <Parameter Name="CompanyName" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Companys_UPDATE">
+            <Parameter Name="CompanyID" Mode="In" Type="Guid" />
+            <Parameter Name="CompanyName" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Contacts_DELETE">
+            <Parameter Name="ContactID" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Contacts_GetAll" ReturnType="Collection(furniShopModel.SP_Contacts_GetAll_Result)" />
+          <FunctionImport Name="SP_Contacts_GetByContactID" ReturnType="Collection(furniShopModel.SP_Contacts_GetByContactID_Result)">
+            <Parameter Name="ContactID" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Contacts_INSERT">
+            <Parameter Name="ContactID" Mode="In" Type="Guid" />
+            <Parameter Name="Name" Mode="In" Type="String" />
+            <Parameter Name="Email" Mode="In" Type="String" />
+            <Parameter Name="Phone" Mode="In" Type="String" />
+            <Parameter Name="Message" Mode="In" Type="String" />
+            <Parameter Name="CreateDate" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Contacts_UPDATE">
+            <Parameter Name="ContactID" Mode="In" Type="Guid" />
+            <Parameter Name="Name" Mode="In" Type="String" />
+            <Parameter Name="Email" Mode="In" Type="String" />
+            <Parameter Name="Phone" Mode="In" Type="String" />
+            <Parameter Name="Message" Mode="In" Type="String" />
+            <Parameter Name="CreateDate" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Countrys_DELETE">
+            <Parameter Name="CountryID" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Countrys_GetAll" ReturnType="Collection(furniShopModel.SP_Countrys_GetAll_Result)" />
+          <FunctionImport Name="SP_Countrys_GetByCountryID" ReturnType="Collection(furniShopModel.SP_Countrys_GetByCountryID_Result)">
+            <Parameter Name="CountryID" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Countrys_INSERT">
+            <Parameter Name="CountryID" Mode="In" Type="Guid" />
+            <Parameter Name="CountryName" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Countrys_UPDATE">
+            <Parameter Name="CountryID" Mode="In" Type="Guid" />
+            <Parameter Name="CountryName" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="sp_creatediagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+            <Parameter Name="version" Mode="In" Type="Int32" />
+            <Parameter Name="definition" Mode="In" Type="Binary" />
+          </FunctionImport>
+          <FunctionImport Name="sp_dropdiagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Footers_DELETE">
+            <Parameter Name="FooterID" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Footers_GetAll" ReturnType="Collection(furniShopModel.SP_Footers_GetAll_Result)" />
+          <FunctionImport Name="SP_Footers_GetByFooterID" ReturnType="Collection(furniShopModel.SP_Footers_GetByFooterID_Result)">
+            <Parameter Name="FooterID" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Footers_INSERT">
+            <Parameter Name="FooterID" Mode="In" Type="Guid" />
+            <Parameter Name="FooterName" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Footers_UPDATE">
+            <Parameter Name="FooterID" Mode="In" Type="Guid" />
+            <Parameter Name="FooterName" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(furniShopModel.sp_helpdiagramdefinition_Result)">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(furniShopModel.sp_helpdiagrams_Result)">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Images_DELETE">
+            <Parameter Name="ImageID" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Images_GetAll" ReturnType="Collection(furniShopModel.SP_Images_GetAll_Result)" />
+          <FunctionImport Name="SP_Images_GetByImageID" ReturnType="Collection(furniShopModel.SP_Images_GetByImageID_Result)">
+            <Parameter Name="ImageID" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Images_INSERT">
+            <Parameter Name="ImageID" Mode="In" Type="Guid" />
+            <Parameter Name="URL" Mode="In" Type="String" />
+            <Parameter Name="BannerFlag" Mode="In" Type="Boolean" />
+            <Parameter Name="LogoFlag" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Images_UPDATE">
+            <Parameter Name="ImageID" Mode="In" Type="Guid" />
+            <Parameter Name="URL" Mode="In" Type="String" />
+            <Parameter Name="BannerFlag" Mode="In" Type="Boolean" />
+            <Parameter Name="LogoFlag" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="SP_MenuGroups_DELETE">
+            <Parameter Name="MenuGroupID" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="SP_MenuGroups_GetAll" ReturnType="Collection(furniShopModel.SP_MenuGroups_GetAll_Result)" />
+          <FunctionImport Name="SP_MenuGroups_GetByMenuGroupID" ReturnType="Collection(furniShopModel.SP_MenuGroups_GetByMenuGroupID_Result)">
+            <Parameter Name="MenuGroupID" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="SP_MenuGroups_INSERT">
+            <Parameter Name="MenuGroupID" Mode="In" Type="Guid" />
+            <Parameter Name="MenuGroupName" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_MenuGroups_UPDATE">
+            <Parameter Name="MenuGroupID" Mode="In" Type="Guid" />
+            <Parameter Name="MenuGroupName" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_MenuItems_DELETE">
+            <Parameter Name="MenuItemID" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="SP_MenuItems_GetAll" ReturnType="Collection(furniShopModel.SP_MenuItems_GetAll_Result)" />
+          <FunctionImport Name="SP_MenuItems_GetByMenuItemID" ReturnType="Collection(furniShopModel.SP_MenuItems_GetByMenuItemID_Result)">
+            <Parameter Name="MenuItemID" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="SP_MenuItems_INSERT">
+            <Parameter Name="MenuItemID" Mode="In" Type="Guid" />
+            <Parameter Name="MenuItemName" Mode="In" Type="String" />
+            <Parameter Name="Position" Mode="In" Type="Int32" />
+            <Parameter Name="URL" Mode="In" Type="String" />
+            <Parameter Name="GroupID" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="SP_MenuItems_UPDATE">
+            <Parameter Name="MenuItemID" Mode="In" Type="Guid" />
+            <Parameter Name="MenuItemName" Mode="In" Type="String" />
+            <Parameter Name="Position" Mode="In" Type="Int32" />
+            <Parameter Name="URL" Mode="In" Type="String" />
+            <Parameter Name="GroupID" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="SP_OrderDetails_DELETE">
+            <Parameter Name="OrderDetailID" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="SP_OrderDetails_GetAll" ReturnType="Collection(furniShopModel.SP_OrderDetails_GetAll_Result)" />
+          <FunctionImport Name="SP_OrderDetails_GetByOrderDetailID" ReturnType="Collection(furniShopModel.SP_OrderDetails_GetByOrderDetailID_Result)">
+            <Parameter Name="OrderDetailID" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="SP_OrderDetails_INSERT">
+            <Parameter Name="OrderDetailID" Mode="In" Type="Guid" />
+            <Parameter Name="ProductID" Mode="In" Type="Guid" />
+            <Parameter Name="OrderID" Mode="In" Type="Guid" />
+            <Parameter Name="Quantity" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_OrderDetails_UPDATE">
+            <Parameter Name="OrderDetailID" Mode="In" Type="Guid" />
+            <Parameter Name="ProductID" Mode="In" Type="Guid" />
+            <Parameter Name="OrderID" Mode="In" Type="Guid" />
+            <Parameter Name="Quantity" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Orders_DELETE">
+            <Parameter Name="OrderID" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Orders_GetAll" ReturnType="Collection(furniShopModel.SP_Orders_GetAll_Result)" />
+          <FunctionImport Name="SP_Orders_GetByOrderID" ReturnType="Collection(furniShopModel.SP_Orders_GetByOrderID_Result)">
+            <Parameter Name="OrderID" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Orders_INSERT">
+            <Parameter Name="OrderID" Mode="In" Type="Guid" />
+            <Parameter Name="UserID" Mode="In" Type="Guid" />
+            <Parameter Name="DateTime" Mode="In" Type="DateTime" />
+            <Parameter Name="CreateBy" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Orders_UPDATE">
+            <Parameter Name="OrderID" Mode="In" Type="Guid" />
+            <Parameter Name="UserID" Mode="In" Type="Guid" />
+            <Parameter Name="DateTime" Mode="In" Type="DateTime" />
+            <Parameter Name="CreateBy" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_ProductCategorys_DELETE">
+            <Parameter Name="ProductCategoryID" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="SP_ProductCategorys_GetAll" ReturnType="Collection(furniShopModel.SP_ProductCategorys_GetAll_Result)" />
+          <FunctionImport Name="SP_ProductCategorys_GetByProductCategoryID" ReturnType="Collection(furniShopModel.SP_ProductCategorys_GetByProductCategoryID_Result)">
+            <Parameter Name="ProductCategoryID" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="SP_ProductCategorys_INSERT">
+            <Parameter Name="ProductCategoryID" Mode="In" Type="Guid" />
+            <Parameter Name="CategoryName" Mode="In" Type="String" />
+            <Parameter Name="Description" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_ProductCategorys_UPDATE">
+            <Parameter Name="ProductCategoryID" Mode="In" Type="Guid" />
+            <Parameter Name="CategoryName" Mode="In" Type="String" />
+            <Parameter Name="Description" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_ProductColors_DELETE">
+            <Parameter Name="ProductColorID" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="SP_ProductColors_GetAll" ReturnType="Collection(furniShopModel.SP_ProductColors_GetAll_Result)" />
+          <FunctionImport Name="SP_ProductColors_GetByProductColorID" ReturnType="Collection(furniShopModel.SP_ProductColors_GetByProductColorID_Result)">
+            <Parameter Name="ProductColorID" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="SP_ProductColors_INSERT">
+            <Parameter Name="ProductColorID" Mode="In" Type="Guid" />
+            <Parameter Name="ColorID" Mode="In" Type="Guid" />
+            <Parameter Name="ProductID" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="SP_ProductColors_UPDATE">
+            <Parameter Name="ProductColorID" Mode="In" Type="Guid" />
+            <Parameter Name="ColorID" Mode="In" Type="Guid" />
+            <Parameter Name="ProductID" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="SP_ProductImages_DELETE">
+            <Parameter Name="ImageProductID" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="SP_ProductImages_GetAll" ReturnType="Collection(furniShopModel.SP_ProductImages_GetAll_Result)" />
+          <FunctionImport Name="SP_ProductImages_GetByImageProductID" ReturnType="Collection(furniShopModel.SP_ProductImages_GetByImageProductID_Result)">
+            <Parameter Name="ImageProductID" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="SP_ProductImages_INSERT">
+            <Parameter Name="ImageProductID" Mode="In" Type="Guid" />
+            <Parameter Name="ProductID" Mode="In" Type="Guid" />
+            <Parameter Name="URL" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_ProductImages_UPDATE">
+            <Parameter Name="ImageProductID" Mode="In" Type="Guid" />
+            <Parameter Name="ProductID" Mode="In" Type="Guid" />
+            <Parameter Name="URL" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Products_DELETE">
+            <Parameter Name="ProductID" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Products_GetAll" ReturnType="Collection(furniShopModel.SP_Products_GetAll_Result)" />
+          <FunctionImport Name="SP_Products_GetByProductID" ReturnType="Collection(furniShopModel.SP_Products_GetByProductID_Result)">
+            <Parameter Name="ProductID" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Products_INSERT">
+            <Parameter Name="ProductID" Mode="In" Type="Guid" />
+            <Parameter Name="ProductName" Mode="In" Type="String" />
+            <Parameter Name="Price" Mode="In" Type="Decimal" />
+            <Parameter Name="HomeFlag" Mode="In" Type="Boolean" />
+            <Parameter Name="Size" Mode="In" Type="String" />
+            <Parameter Name="Detail" Mode="In" Type="String" />
+            <Parameter Name="Sale" Mode="In" Type="Double" />
+            <Parameter Name="CompanyID" Mode="In" Type="Guid" />
+            <Parameter Name="CategoryID" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Products_UPDATE">
+            <Parameter Name="ProductID" Mode="In" Type="Guid" />
+            <Parameter Name="ProductName" Mode="In" Type="String" />
+            <Parameter Name="Price" Mode="In" Type="Decimal" />
+            <Parameter Name="HomeFlag" Mode="In" Type="Boolean" />
+            <Parameter Name="Size" Mode="In" Type="String" />
+            <Parameter Name="Detail" Mode="In" Type="String" />
+            <Parameter Name="Sale" Mode="In" Type="Double" />
+            <Parameter Name="CompanyID" Mode="In" Type="Guid" />
+            <Parameter Name="CategoryID" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="SP_ProductTags_DELETE">
+            <Parameter Name="ProductTagID" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="SP_ProductTags_GetAll" ReturnType="Collection(furniShopModel.SP_ProductTags_GetAll_Result)" />
+          <FunctionImport Name="SP_ProductTags_GetByProductTagID" ReturnType="Collection(furniShopModel.SP_ProductTags_GetByProductTagID_Result)">
+            <Parameter Name="ProductTagID" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="SP_ProductTags_INSERT">
+            <Parameter Name="ProductTagID" Mode="In" Type="Guid" />
+            <Parameter Name="ProductID" Mode="In" Type="Guid" />
+            <Parameter Name="TagID" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="SP_ProductTags_UPDATE">
+            <Parameter Name="ProductTagID" Mode="In" Type="Guid" />
+            <Parameter Name="ProductID" Mode="In" Type="Guid" />
+            <Parameter Name="TagID" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="sp_renamediagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+            <Parameter Name="new_diagramname" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Roles_DELETE">
+            <Parameter Name="RoleID" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Roles_GetAll" ReturnType="Collection(furniShopModel.SP_Roles_GetAll_Result)" />
+          <FunctionImport Name="SP_Roles_GetByRoleID" ReturnType="Collection(furniShopModel.SP_Roles_GetByRoleID_Result)">
+            <Parameter Name="RoleID" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Roles_INSERT">
+            <Parameter Name="RoleID" Mode="In" Type="Guid" />
+            <Parameter Name="RoleName" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Roles_UPDATE">
+            <Parameter Name="RoleID" Mode="In" Type="Guid" />
+            <Parameter Name="RoleName" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_ShopAddress_DELETE">
+            <Parameter Name="ShopAddressID" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="SP_ShopAddress_GetAll" ReturnType="Collection(furniShopModel.SP_ShopAddress_GetAll_Result)" />
+          <FunctionImport Name="SP_ShopAddress_GetByShopAddressID" ReturnType="Collection(furniShopModel.SP_ShopAddress_GetByShopAddressID_Result)">
+            <Parameter Name="ShopAddressID" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="SP_ShopAddress_INSERT">
+            <Parameter Name="ShopAddressID" Mode="In" Type="Guid" />
+            <Parameter Name="Address" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_ShopAddress_UPDATE">
+            <Parameter Name="ShopAddressID" Mode="In" Type="Guid" />
+            <Parameter Name="Address" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Tags_DELETE">
+            <Parameter Name="TagID" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Tags_GetAll" ReturnType="Collection(furniShopModel.SP_Tags_GetAll_Result)" />
+          <FunctionImport Name="SP_Tags_GetByTagID" ReturnType="Collection(furniShopModel.SP_Tags_GetByTagID_Result)">
+            <Parameter Name="TagID" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Tags_INSERT">
+            <Parameter Name="TagID" Mode="In" Type="Guid" />
+            <Parameter Name="TagName" Mode="In" Type="String" />
+            <Parameter Name="Type" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Tags_UPDATE">
+            <Parameter Name="TagID" Mode="In" Type="Guid" />
+            <Parameter Name="TagName" Mode="In" Type="String" />
+            <Parameter Name="Type" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="sp_upgraddiagrams" />
+          <FunctionImport Name="SP_Users_DELETE">
+            <Parameter Name="UserID" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Users_GetAll" ReturnType="Collection(furniShopModel.SP_Users_GetAll_Result)" />
+          <FunctionImport Name="SP_Users_GetByUserID" ReturnType="Collection(furniShopModel.SP_Users_GetByUserID_Result)">
+            <Parameter Name="UserID" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Users_INSERT">
+            <Parameter Name="UserID" Mode="In" Type="Guid" />
+            <Parameter Name="FirstName" Mode="In" Type="String" />
+            <Parameter Name="LastName" Mode="In" Type="String" />
+            <Parameter Name="Email" Mode="In" Type="String" />
+            <Parameter Name="PassWord" Mode="In" Type="String" />
+            <Parameter Name="Mobile" Mode="In" Type="String" />
+            <Parameter Name="Address" Mode="In" Type="String" />
+            <Parameter Name="RoleID" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Users_UPDATE">
+            <Parameter Name="UserID" Mode="In" Type="Guid" />
+            <Parameter Name="FirstName" Mode="In" Type="String" />
+            <Parameter Name="LastName" Mode="In" Type="String" />
+            <Parameter Name="Email" Mode="In" Type="String" />
+            <Parameter Name="PassWord" Mode="In" Type="String" />
+            <Parameter Name="Mobile" Mode="In" Type="String" />
+            <Parameter Name="Address" Mode="In" Type="String" />
+            <Parameter Name="RoleID" Mode="In" Type="Guid" />
+          </FunctionImport>
+        </EntityContainer>
+        <ComplexType Name="SP_Colors_GetAll_Result">
+          <Property Type="Guid" Name="ColorID" Nullable="false" />
+          <Property Type="String" Name="ColorName" Nullable="false" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="SP_Colors_GetByColorID_Result">
+          <Property Type="Guid" Name="ColorID" Nullable="false" />
+          <Property Type="String" Name="ColorName" Nullable="false" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="SP_Companys_GetAll_Result">
+          <Property Type="Guid" Name="CompanyID" Nullable="false" />
+          <Property Type="String" Name="CompanyName" Nullable="false" MaxLength="100" />
+        </ComplexType>
+        <ComplexType Name="SP_Companys_GetByCompanyID_Result">
+          <Property Type="Guid" Name="CompanyID" Nullable="false" />
+          <Property Type="String" Name="CompanyName" Nullable="false" MaxLength="100" />
+        </ComplexType>
+        <ComplexType Name="SP_Contacts_GetAll_Result">
+          <Property Type="Guid" Name="ContactID" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="Email" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Phone" Nullable="true" MaxLength="20" />
+          <Property Type="String" Name="Message" Nullable="false" MaxLength="150" />
+          <Property Type="DateTime" Name="CreateDate" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SP_Contacts_GetByContactID_Result">
+          <Property Type="Guid" Name="ContactID" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="Email" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Phone" Nullable="true" MaxLength="20" />
+          <Property Type="String" Name="Message" Nullable="false" MaxLength="150" />
+          <Property Type="DateTime" Name="CreateDate" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SP_Countrys_GetAll_Result">
+          <Property Type="Guid" Name="CountryID" Nullable="false" />
+          <Property Type="String" Name="CountryName" Nullable="false" MaxLength="100" />
+        </ComplexType>
+        <ComplexType Name="SP_Countrys_GetByCountryID_Result">
+          <Property Type="Guid" Name="CountryID" Nullable="false" />
+          <Property Type="String" Name="CountryName" Nullable="false" MaxLength="100" />
+        </ComplexType>
+        <ComplexType Name="SP_Footers_GetAll_Result">
+          <Property Type="Guid" Name="FooterID" Nullable="false" />
+          <Property Type="String" Name="FooterName" Nullable="true" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="SP_Footers_GetByFooterID_Result">
+          <Property Type="Guid" Name="FooterID" Nullable="false" />
+          <Property Type="String" Name="FooterName" Nullable="true" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="sp_helpdiagramdefinition_Result">
+          <Property Type="Int32" Name="version" Nullable="true" />
+          <Property Type="Binary" Name="definition" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="sp_helpdiagrams_Result">
+          <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+          <Property Type="Int32" Name="OwnerID" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SP_Images_GetAll_Result">
+          <Property Type="Guid" Name="ImageID" Nullable="false" />
+          <Property Type="String" Name="URL" Nullable="true" MaxLength="500" />
+          <Property Type="Boolean" Name="BannerFlag" Nullable="true" />
+          <Property Type="Boolean" Name="LogoFlag" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="SP_Images_GetByImageID_Result">
+          <Property Type="Guid" Name="ImageID" Nullable="false" />
+          <Property Type="String" Name="URL" Nullable="true" MaxLength="500" />
+          <Property Type="Boolean" Name="BannerFlag" Nullable="true" />
+          <Property Type="Boolean" Name="LogoFlag" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="SP_MenuGroups_GetAll_Result">
+          <Property Type="Guid" Name="MenuGroupID" Nullable="false" />
+          <Property Type="String" Name="MenuGroupName" Nullable="false" MaxLength="150" />
+        </ComplexType>
+        <ComplexType Name="SP_MenuGroups_GetByMenuGroupID_Result">
+          <Property Type="Guid" Name="MenuGroupID" Nullable="false" />
+          <Property Type="String" Name="MenuGroupName" Nullable="false" MaxLength="150" />
+        </ComplexType>
+        <ComplexType Name="SP_MenuItems_GetAll_Result">
+          <Property Type="Guid" Name="MenuItemID" Nullable="false" />
+          <Property Type="String" Name="MenuItemName" Nullable="true" MaxLength="150" />
+          <Property Type="Int32" Name="Position" Nullable="true" />
+          <Property Type="String" Name="URL" Nullable="true" MaxLength="200" />
+          <Property Type="Guid" Name="GroupID" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="SP_MenuItems_GetByMenuItemID_Result">
+          <Property Type="Guid" Name="MenuItemID" Nullable="false" />
+          <Property Type="String" Name="MenuItemName" Nullable="true" MaxLength="150" />
+          <Property Type="Int32" Name="Position" Nullable="true" />
+          <Property Type="String" Name="URL" Nullable="true" MaxLength="200" />
+          <Property Type="Guid" Name="GroupID" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="SP_OrderDetails_GetAll_Result">
+          <Property Type="Guid" Name="OrderDetailID" Nullable="false" />
+          <Property Type="Guid" Name="ProductID" Nullable="true" />
+          <Property Type="Guid" Name="OrderID" Nullable="true" />
+          <Property Type="Int32" Name="Quantity" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="SP_OrderDetails_GetByOrderDetailID_Result">
+          <Property Type="Guid" Name="OrderDetailID" Nullable="false" />
+          <Property Type="Guid" Name="ProductID" Nullable="true" />
+          <Property Type="Guid" Name="OrderID" Nullable="true" />
+          <Property Type="Int32" Name="Quantity" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="SP_Orders_GetAll_Result">
+          <Property Type="Guid" Name="OrderID" Nullable="false" />
+          <Property Type="Guid" Name="UserID" Nullable="false" />
+          <Property Type="DateTime" Name="DateTime" Nullable="false" />
+          <Property Type="String" Name="CreateBy" Nullable="true" MaxLength="150" />
+        </ComplexType>
+        <ComplexType Name="SP_Orders_GetByOrderID_Result">
+          <Property Type="Guid" Name="OrderID" Nullable="false" />
+          <Property Type="Guid" Name="UserID" Nullable="false" />
+          <Property Type="DateTime" Name="DateTime" Nullable="false" />
+          <Property Type="String" Name="CreateBy" Nullable="true" MaxLength="150" />
+        </ComplexType>
+        <ComplexType Name="SP_ProductCategorys_GetAll_Result">
+          <Property Type="Guid" Name="ProductCategoryID" Nullable="false" />
+          <Property Type="String" Name="CategoryName" Nullable="false" MaxLength="150" />
+          <Property Type="String" Name="Description" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="SP_ProductCategorys_GetByProductCategoryID_Result">
+          <Property Type="Guid" Name="ProductCategoryID" Nullable="false" />
+          <Property Type="String" Name="CategoryName" Nullable="false" MaxLength="150" />
+          <Property Type="String" Name="Description" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="SP_ProductColors_GetAll_Result">
+          <Property Type="Guid" Name="ProductColorID" Nullable="false" />
+          <Property Type="Guid" Name="ColorID" Nullable="true" />
+          <Property Type="Guid" Name="ProductID" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="SP_ProductColors_GetByProductColorID_Result">
+          <Property Type="Guid" Name="ProductColorID" Nullable="false" />
+          <Property Type="Guid" Name="ColorID" Nullable="true" />
+          <Property Type="Guid" Name="ProductID" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="SP_ProductImages_GetAll_Result">
+          <Property Type="Guid" Name="ImageProductID" Nullable="false" />
+          <Property Type="Guid" Name="ProductID" Nullable="false" />
+          <Property Type="String" Name="URL" Nullable="true" MaxLength="500" />
+        </ComplexType>
+        <ComplexType Name="SP_ProductImages_GetByImageProductID_Result">
+          <Property Type="Guid" Name="ImageProductID" Nullable="false" />
+          <Property Type="Guid" Name="ProductID" Nullable="false" />
+          <Property Type="String" Name="URL" Nullable="true" MaxLength="500" />
+        </ComplexType>
+        <ComplexType Name="SP_Products_GetAll_Result">
+          <Property Type="Guid" Name="ProductID" Nullable="false" />
+          <Property Type="String" Name="ProductName" Nullable="false" MaxLength="150" />
+          <Property Type="Decimal" Name="Price" Nullable="false" Precision="18" Scale="0" />
+          <Property Type="Boolean" Name="HomeFlag" Nullable="true" />
+          <Property Type="String" Name="Size" Nullable="true" MaxLength="150" />
+          <Property Type="String" Name="Detail" Nullable="true" />
+          <Property Type="Double" Name="Sale" Nullable="true" />
+          <Property Type="Guid" Name="CompanyID" Nullable="true" />
+          <Property Type="Guid" Name="CategoryID" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SP_Products_GetByProductID_Result">
+          <Property Type="Guid" Name="ProductID" Nullable="false" />
+          <Property Type="String" Name="ProductName" Nullable="false" MaxLength="150" />
+          <Property Type="Decimal" Name="Price" Nullable="false" Precision="18" Scale="0" />
+          <Property Type="Boolean" Name="HomeFlag" Nullable="true" />
+          <Property Type="String" Name="Size" Nullable="true" MaxLength="150" />
+          <Property Type="String" Name="Detail" Nullable="true" />
+          <Property Type="Double" Name="Sale" Nullable="true" />
+          <Property Type="Guid" Name="CompanyID" Nullable="true" />
+          <Property Type="Guid" Name="CategoryID" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SP_ProductTags_GetAll_Result">
+          <Property Type="Guid" Name="ProductTagID" Nullable="false" />
+          <Property Type="Guid" Name="ProductID" Nullable="true" />
+          <Property Type="Guid" Name="TagID" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="SP_ProductTags_GetByProductTagID_Result">
+          <Property Type="Guid" Name="ProductTagID" Nullable="false" />
+          <Property Type="Guid" Name="ProductID" Nullable="true" />
+          <Property Type="Guid" Name="TagID" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="SP_Roles_GetAll_Result">
+          <Property Type="Guid" Name="RoleID" Nullable="false" />
+          <Property Type="String" Name="RoleName" Nullable="true" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="SP_Roles_GetByRoleID_Result">
+          <Property Type="Guid" Name="RoleID" Nullable="false" />
+          <Property Type="String" Name="RoleName" Nullable="true" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="SP_ShopAddress_GetAll_Result">
+          <Property Type="Guid" Name="ShopAddressID" Nullable="false" />
+          <Property Type="String" Name="Address" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="SP_ShopAddress_GetByShopAddressID_Result">
+          <Property Type="Guid" Name="ShopAddressID" Nullable="false" />
+          <Property Type="String" Name="Address" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="SP_Tags_GetAll_Result">
+          <Property Type="Guid" Name="TagID" Nullable="false" />
+          <Property Type="String" Name="TagName" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="Type" Nullable="true" MaxLength="100" />
+        </ComplexType>
+        <ComplexType Name="SP_Tags_GetByTagID_Result">
+          <Property Type="Guid" Name="TagID" Nullable="false" />
+          <Property Type="String" Name="TagName" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="Type" Nullable="true" MaxLength="100" />
+        </ComplexType>
+        <ComplexType Name="SP_Users_GetAll_Result">
+          <Property Type="Guid" Name="UserID" Nullable="false" />
+          <Property Type="String" Name="FirstName" Nullable="true" MaxLength="150" />
+          <Property Type="String" Name="LastName" Nullable="true" MaxLength="150" />
+          <Property Type="String" Name="Email" Nullable="false" MaxLength="150" />
+          <Property Type="String" Name="PassWord" Nullable="false" MaxLength="150" />
+          <Property Type="String" Name="Mobile" Nullable="true" MaxLength="20" />
+          <Property Type="String" Name="Address" Nullable="true" MaxLength="20" />
+          <Property Type="Guid" Name="RoleID" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SP_Users_GetByUserID_Result">
+          <Property Type="Guid" Name="UserID" Nullable="false" />
+          <Property Type="String" Name="FirstName" Nullable="true" MaxLength="150" />
+          <Property Type="String" Name="LastName" Nullable="true" MaxLength="150" />
+          <Property Type="String" Name="Email" Nullable="false" MaxLength="150" />
+          <Property Type="String" Name="PassWord" Nullable="false" MaxLength="150" />
+          <Property Type="String" Name="Mobile" Nullable="true" MaxLength="20" />
+          <Property Type="String" Name="Address" Nullable="true" MaxLength="20" />
+          <Property Type="Guid" Name="RoleID" Nullable="false" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="furniShopModelStoreContainer" CdmEntityContainer="furniShopEntities" >
+          <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="furniShopModel.Store.sp_alterdiagram" />
+          <FunctionImportMapping FunctionImportName="SP_Colors_DELETE" FunctionName="furniShopModel.Store.SP_Colors_DELETE" />
+          <FunctionImportMapping FunctionImportName="SP_Colors_GetAll" FunctionName="furniShopModel.Store.SP_Colors_GetAll">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="furniShopModel.SP_Colors_GetAll_Result">
+                <ScalarProperty Name="ColorID" ColumnName="ColorID" />
+                <ScalarProperty Name="ColorName" ColumnName="ColorName" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_Colors_GetByColorID" FunctionName="furniShopModel.Store.SP_Colors_GetByColorID">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="furniShopModel.SP_Colors_GetByColorID_Result">
+                <ScalarProperty Name="ColorID" ColumnName="ColorID" />
+                <ScalarProperty Name="ColorName" ColumnName="ColorName" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_Colors_INSERT" FunctionName="furniShopModel.Store.SP_Colors_INSERT" />
+          <FunctionImportMapping FunctionImportName="SP_Colors_UPDATE" FunctionName="furniShopModel.Store.SP_Colors_UPDATE" />
+          <FunctionImportMapping FunctionImportName="SP_Companys_DELETE" FunctionName="furniShopModel.Store.SP_Companys_DELETE" />
+          <FunctionImportMapping FunctionImportName="SP_Companys_GetAll" FunctionName="furniShopModel.Store.SP_Companys_GetAll">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="furniShopModel.SP_Companys_GetAll_Result">
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_Companys_GetByCompanyID" FunctionName="furniShopModel.Store.SP_Companys_GetByCompanyID">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="furniShopModel.SP_Companys_GetByCompanyID_Result">
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_Companys_INSERT" FunctionName="furniShopModel.Store.SP_Companys_INSERT" />
+          <FunctionImportMapping FunctionImportName="SP_Companys_UPDATE" FunctionName="furniShopModel.Store.SP_Companys_UPDATE" />
+          <FunctionImportMapping FunctionImportName="SP_Contacts_DELETE" FunctionName="furniShopModel.Store.SP_Contacts_DELETE" />
+          <FunctionImportMapping FunctionImportName="SP_Contacts_GetAll" FunctionName="furniShopModel.Store.SP_Contacts_GetAll">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="furniShopModel.SP_Contacts_GetAll_Result">
+                <ScalarProperty Name="ContactID" ColumnName="ContactID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Message" ColumnName="Message" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_Contacts_GetByContactID" FunctionName="furniShopModel.Store.SP_Contacts_GetByContactID">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="furniShopModel.SP_Contacts_GetByContactID_Result">
+                <ScalarProperty Name="ContactID" ColumnName="ContactID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Message" ColumnName="Message" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_Contacts_INSERT" FunctionName="furniShopModel.Store.SP_Contacts_INSERT" />
+          <FunctionImportMapping FunctionImportName="SP_Contacts_UPDATE" FunctionName="furniShopModel.Store.SP_Contacts_UPDATE" />
+          <FunctionImportMapping FunctionImportName="SP_Countrys_DELETE" FunctionName="furniShopModel.Store.SP_Countrys_DELETE" />
+          <FunctionImportMapping FunctionImportName="SP_Countrys_GetAll" FunctionName="furniShopModel.Store.SP_Countrys_GetAll">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="furniShopModel.SP_Countrys_GetAll_Result">
+                <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+                <ScalarProperty Name="CountryName" ColumnName="CountryName" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_Countrys_GetByCountryID" FunctionName="furniShopModel.Store.SP_Countrys_GetByCountryID">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="furniShopModel.SP_Countrys_GetByCountryID_Result">
+                <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+                <ScalarProperty Name="CountryName" ColumnName="CountryName" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_Countrys_INSERT" FunctionName="furniShopModel.Store.SP_Countrys_INSERT" />
+          <FunctionImportMapping FunctionImportName="SP_Countrys_UPDATE" FunctionName="furniShopModel.Store.SP_Countrys_UPDATE" />
+          <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="furniShopModel.Store.sp_creatediagram" />
+          <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="furniShopModel.Store.sp_dropdiagram" />
+          <FunctionImportMapping FunctionImportName="SP_Footers_DELETE" FunctionName="furniShopModel.Store.SP_Footers_DELETE" />
+          <FunctionImportMapping FunctionImportName="SP_Footers_GetAll" FunctionName="furniShopModel.Store.SP_Footers_GetAll">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="furniShopModel.SP_Footers_GetAll_Result">
+                <ScalarProperty Name="FooterID" ColumnName="FooterID" />
+                <ScalarProperty Name="FooterName" ColumnName="FooterName" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_Footers_GetByFooterID" FunctionName="furniShopModel.Store.SP_Footers_GetByFooterID">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="furniShopModel.SP_Footers_GetByFooterID_Result">
+                <ScalarProperty Name="FooterID" ColumnName="FooterID" />
+                <ScalarProperty Name="FooterName" ColumnName="FooterName" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_Footers_INSERT" FunctionName="furniShopModel.Store.SP_Footers_INSERT" />
+          <FunctionImportMapping FunctionImportName="SP_Footers_UPDATE" FunctionName="furniShopModel.Store.SP_Footers_UPDATE" />
+          <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="furniShopModel.Store.sp_helpdiagramdefinition">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="furniShopModel.sp_helpdiagramdefinition_Result">
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="furniShopModel.Store.sp_helpdiagrams">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="furniShopModel.sp_helpdiagrams_Result">
+                <ScalarProperty Name="Database" ColumnName="Database" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Owner" ColumnName="Owner" />
+                <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_Images_DELETE" FunctionName="furniShopModel.Store.SP_Images_DELETE" />
+          <FunctionImportMapping FunctionImportName="SP_Images_GetAll" FunctionName="furniShopModel.Store.SP_Images_GetAll">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="furniShopModel.SP_Images_GetAll_Result">
+                <ScalarProperty Name="ImageID" ColumnName="ImageID" />
+                <ScalarProperty Name="URL" ColumnName="URL" />
+                <ScalarProperty Name="BannerFlag" ColumnName="BannerFlag" />
+                <ScalarProperty Name="LogoFlag" ColumnName="LogoFlag" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_Images_GetByImageID" FunctionName="furniShopModel.Store.SP_Images_GetByImageID">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="furniShopModel.SP_Images_GetByImageID_Result">
+                <ScalarProperty Name="ImageID" ColumnName="ImageID" />
+                <ScalarProperty Name="URL" ColumnName="URL" />
+                <ScalarProperty Name="BannerFlag" ColumnName="BannerFlag" />
+                <ScalarProperty Name="LogoFlag" ColumnName="LogoFlag" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_Images_INSERT" FunctionName="furniShopModel.Store.SP_Images_INSERT" />
+          <FunctionImportMapping FunctionImportName="SP_Images_UPDATE" FunctionName="furniShopModel.Store.SP_Images_UPDATE" />
+          <FunctionImportMapping FunctionImportName="SP_MenuGroups_DELETE" FunctionName="furniShopModel.Store.SP_MenuGroups_DELETE" />
+          <FunctionImportMapping FunctionImportName="SP_MenuGroups_GetAll" FunctionName="furniShopModel.Store.SP_MenuGroups_GetAll">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="furniShopModel.SP_MenuGroups_GetAll_Result">
+                <ScalarProperty Name="MenuGroupID" ColumnName="MenuGroupID" />
+                <ScalarProperty Name="MenuGroupName" ColumnName="MenuGroupName" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_MenuGroups_GetByMenuGroupID" FunctionName="furniShopModel.Store.SP_MenuGroups_GetByMenuGroupID">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="furniShopModel.SP_MenuGroups_GetByMenuGroupID_Result">
+                <ScalarProperty Name="MenuGroupID" ColumnName="MenuGroupID" />
+                <ScalarProperty Name="MenuGroupName" ColumnName="MenuGroupName" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_MenuGroups_INSERT" FunctionName="furniShopModel.Store.SP_MenuGroups_INSERT" />
+          <FunctionImportMapping FunctionImportName="SP_MenuGroups_UPDATE" FunctionName="furniShopModel.Store.SP_MenuGroups_UPDATE" />
+          <FunctionImportMapping FunctionImportName="SP_MenuItems_DELETE" FunctionName="furniShopModel.Store.SP_MenuItems_DELETE" />
+          <FunctionImportMapping FunctionImportName="SP_MenuItems_GetAll" FunctionName="furniShopModel.Store.SP_MenuItems_GetAll">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="furniShopModel.SP_MenuItems_GetAll_Result">
+                <ScalarProperty Name="MenuItemID" ColumnName="MenuItemID" />
+                <ScalarProperty Name="MenuItemName" ColumnName="MenuItemName" />
+                <ScalarProperty Name="Position" ColumnName="Position" />
+                <ScalarProperty Name="URL" ColumnName="URL" />
+                <ScalarProperty Name="GroupID" ColumnName="GroupID" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_MenuItems_GetByMenuItemID" FunctionName="furniShopModel.Store.SP_MenuItems_GetByMenuItemID">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="furniShopModel.SP_MenuItems_GetByMenuItemID_Result">
+                <ScalarProperty Name="MenuItemID" ColumnName="MenuItemID" />
+                <ScalarProperty Name="MenuItemName" ColumnName="MenuItemName" />
+                <ScalarProperty Name="Position" ColumnName="Position" />
+                <ScalarProperty Name="URL" ColumnName="URL" />
+                <ScalarProperty Name="GroupID" ColumnName="GroupID" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_MenuItems_INSERT" FunctionName="furniShopModel.Store.SP_MenuItems_INSERT" />
+          <FunctionImportMapping FunctionImportName="SP_MenuItems_UPDATE" FunctionName="furniShopModel.Store.SP_MenuItems_UPDATE" />
+          <FunctionImportMapping FunctionImportName="SP_OrderDetails_DELETE" FunctionName="furniShopModel.Store.SP_OrderDetails_DELETE" />
+          <FunctionImportMapping FunctionImportName="SP_OrderDetails_GetAll" FunctionName="furniShopModel.Store.SP_OrderDetails_GetAll">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="furniShopModel.SP_OrderDetails_GetAll_Result">
+                <ScalarProperty Name="OrderDetailID" ColumnName="OrderDetailID" />
+                <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+                <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_OrderDetails_GetByOrderDetailID" FunctionName="furniShopModel.Store.SP_OrderDetails_GetByOrderDetailID">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="furniShopModel.SP_OrderDetails_GetByOrderDetailID_Result">
+                <ScalarProperty Name="OrderDetailID" ColumnName="OrderDetailID" />
+                <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+                <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_OrderDetails_INSERT" FunctionName="furniShopModel.Store.SP_OrderDetails_INSERT" />
+          <FunctionImportMapping FunctionImportName="SP_OrderDetails_UPDATE" FunctionName="furniShopModel.Store.SP_OrderDetails_UPDATE" />
+          <FunctionImportMapping FunctionImportName="SP_Orders_DELETE" FunctionName="furniShopModel.Store.SP_Orders_DELETE" />
+          <FunctionImportMapping FunctionImportName="SP_Orders_GetAll" FunctionName="furniShopModel.Store.SP_Orders_GetAll">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="furniShopModel.SP_Orders_GetAll_Result">
+                <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="DateTime" ColumnName="DateTime" />
+                <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_Orders_GetByOrderID" FunctionName="furniShopModel.Store.SP_Orders_GetByOrderID">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="furniShopModel.SP_Orders_GetByOrderID_Result">
+                <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="DateTime" ColumnName="DateTime" />
+                <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_Orders_INSERT" FunctionName="furniShopModel.Store.SP_Orders_INSERT" />
+          <FunctionImportMapping FunctionImportName="SP_Orders_UPDATE" FunctionName="furniShopModel.Store.SP_Orders_UPDATE" />
+          <FunctionImportMapping FunctionImportName="SP_ProductCategorys_DELETE" FunctionName="furniShopModel.Store.SP_ProductCategorys_DELETE" />
+          <FunctionImportMapping FunctionImportName="SP_ProductCategorys_GetAll" FunctionName="furniShopModel.Store.SP_ProductCategorys_GetAll">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="furniShopModel.SP_ProductCategorys_GetAll_Result">
+                <ScalarProperty Name="ProductCategoryID" ColumnName="ProductCategoryID" />
+                <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_ProductCategorys_GetByProductCategoryID" FunctionName="furniShopModel.Store.SP_ProductCategorys_GetByProductCategoryID">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="furniShopModel.SP_ProductCategorys_GetByProductCategoryID_Result">
+                <ScalarProperty Name="ProductCategoryID" ColumnName="ProductCategoryID" />
+                <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_ProductCategorys_INSERT" FunctionName="furniShopModel.Store.SP_ProductCategorys_INSERT" />
+          <FunctionImportMapping FunctionImportName="SP_ProductCategorys_UPDATE" FunctionName="furniShopModel.Store.SP_ProductCategorys_UPDATE" />
+          <FunctionImportMapping FunctionImportName="SP_ProductColors_DELETE" FunctionName="furniShopModel.Store.SP_ProductColors_DELETE" />
+          <FunctionImportMapping FunctionImportName="SP_ProductColors_GetAll" FunctionName="furniShopModel.Store.SP_ProductColors_GetAll">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="furniShopModel.SP_ProductColors_GetAll_Result">
+                <ScalarProperty Name="ProductColorID" ColumnName="ProductColorID" />
+                <ScalarProperty Name="ColorID" ColumnName="ColorID" />
+                <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_ProductColors_GetByProductColorID" FunctionName="furniShopModel.Store.SP_ProductColors_GetByProductColorID">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="furniShopModel.SP_ProductColors_GetByProductColorID_Result">
+                <ScalarProperty Name="ProductColorID" ColumnName="ProductColorID" />
+                <ScalarProperty Name="ColorID" ColumnName="ColorID" />
+                <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_ProductColors_INSERT" FunctionName="furniShopModel.Store.SP_ProductColors_INSERT" />
+          <FunctionImportMapping FunctionImportName="SP_ProductColors_UPDATE" FunctionName="furniShopModel.Store.SP_ProductColors_UPDATE" />
+          <FunctionImportMapping FunctionImportName="SP_ProductImages_DELETE" FunctionName="furniShopModel.Store.SP_ProductImages_DELETE" />
+          <FunctionImportMapping FunctionImportName="SP_ProductImages_GetAll" FunctionName="furniShopModel.Store.SP_ProductImages_GetAll">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="furniShopModel.SP_ProductImages_GetAll_Result">
+                <ScalarProperty Name="ImageProductID" ColumnName="ImageProductID" />
+                <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+                <ScalarProperty Name="URL" ColumnName="URL" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_ProductImages_GetByImageProductID" FunctionName="furniShopModel.Store.SP_ProductImages_GetByImageProductID">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="furniShopModel.SP_ProductImages_GetByImageProductID_Result">
+                <ScalarProperty Name="ImageProductID" ColumnName="ImageProductID" />
+                <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+                <ScalarProperty Name="URL" ColumnName="URL" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_ProductImages_INSERT" FunctionName="furniShopModel.Store.SP_ProductImages_INSERT" />
+          <FunctionImportMapping FunctionImportName="SP_ProductImages_UPDATE" FunctionName="furniShopModel.Store.SP_ProductImages_UPDATE" />
+          <FunctionImportMapping FunctionImportName="SP_Products_DELETE" FunctionName="furniShopModel.Store.SP_Products_DELETE" />
+          <FunctionImportMapping FunctionImportName="SP_Products_GetAll" FunctionName="furniShopModel.Store.SP_Products_GetAll">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="furniShopModel.SP_Products_GetAll_Result">
+                <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+                <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="HomeFlag" ColumnName="HomeFlag" />
+                <ScalarProperty Name="Size" ColumnName="Size" />
+                <ScalarProperty Name="Detail" ColumnName="Detail" />
+                <ScalarProperty Name="Sale" ColumnName="Sale" />
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_Products_GetByProductID" FunctionName="furniShopModel.Store.SP_Products_GetByProductID">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="furniShopModel.SP_Products_GetByProductID_Result">
+                <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+                <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="HomeFlag" ColumnName="HomeFlag" />
+                <ScalarProperty Name="Size" ColumnName="Size" />
+                <ScalarProperty Name="Detail" ColumnName="Detail" />
+                <ScalarProperty Name="Sale" ColumnName="Sale" />
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_Products_INSERT" FunctionName="furniShopModel.Store.SP_Products_INSERT" />
+          <FunctionImportMapping FunctionImportName="SP_Products_UPDATE" FunctionName="furniShopModel.Store.SP_Products_UPDATE" />
+          <FunctionImportMapping FunctionImportName="SP_ProductTags_DELETE" FunctionName="furniShopModel.Store.SP_ProductTags_DELETE" />
+          <FunctionImportMapping FunctionImportName="SP_ProductTags_GetAll" FunctionName="furniShopModel.Store.SP_ProductTags_GetAll">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="furniShopModel.SP_ProductTags_GetAll_Result">
+                <ScalarProperty Name="ProductTagID" ColumnName="ProductTagID" />
+                <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+                <ScalarProperty Name="TagID" ColumnName="TagID" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_ProductTags_GetByProductTagID" FunctionName="furniShopModel.Store.SP_ProductTags_GetByProductTagID">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="furniShopModel.SP_ProductTags_GetByProductTagID_Result">
+                <ScalarProperty Name="ProductTagID" ColumnName="ProductTagID" />
+                <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+                <ScalarProperty Name="TagID" ColumnName="TagID" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_ProductTags_INSERT" FunctionName="furniShopModel.Store.SP_ProductTags_INSERT" />
+          <FunctionImportMapping FunctionImportName="SP_ProductTags_UPDATE" FunctionName="furniShopModel.Store.SP_ProductTags_UPDATE" />
+          <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="furniShopModel.Store.sp_renamediagram" />
+          <FunctionImportMapping FunctionImportName="SP_Roles_DELETE" FunctionName="furniShopModel.Store.SP_Roles_DELETE" />
+          <FunctionImportMapping FunctionImportName="SP_Roles_GetAll" FunctionName="furniShopModel.Store.SP_Roles_GetAll">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="furniShopModel.SP_Roles_GetAll_Result">
+                <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+                <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_Roles_GetByRoleID" FunctionName="furniShopModel.Store.SP_Roles_GetByRoleID">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="furniShopModel.SP_Roles_GetByRoleID_Result">
+                <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+                <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_Roles_INSERT" FunctionName="furniShopModel.Store.SP_Roles_INSERT" />
+          <FunctionImportMapping FunctionImportName="SP_Roles_UPDATE" FunctionName="furniShopModel.Store.SP_Roles_UPDATE" />
+          <FunctionImportMapping FunctionImportName="SP_ShopAddress_DELETE" FunctionName="furniShopModel.Store.SP_ShopAddress_DELETE" />
+          <FunctionImportMapping FunctionImportName="SP_ShopAddress_GetAll" FunctionName="furniShopModel.Store.SP_ShopAddress_GetAll">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="furniShopModel.SP_ShopAddress_GetAll_Result">
+                <ScalarProperty Name="ShopAddressID" ColumnName="ShopAddressID" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_ShopAddress_GetByShopAddressID" FunctionName="furniShopModel.Store.SP_ShopAddress_GetByShopAddressID">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="furniShopModel.SP_ShopAddress_GetByShopAddressID_Result">
+                <ScalarProperty Name="ShopAddressID" ColumnName="ShopAddressID" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_ShopAddress_INSERT" FunctionName="furniShopModel.Store.SP_ShopAddress_INSERT" />
+          <FunctionImportMapping FunctionImportName="SP_ShopAddress_UPDATE" FunctionName="furniShopModel.Store.SP_ShopAddress_UPDATE" />
+          <FunctionImportMapping FunctionImportName="SP_Tags_DELETE" FunctionName="furniShopModel.Store.SP_Tags_DELETE" />
+          <FunctionImportMapping FunctionImportName="SP_Tags_GetAll" FunctionName="furniShopModel.Store.SP_Tags_GetAll">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="furniShopModel.SP_Tags_GetAll_Result">
+                <ScalarProperty Name="TagID" ColumnName="TagID" />
+                <ScalarProperty Name="TagName" ColumnName="TagName" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_Tags_GetByTagID" FunctionName="furniShopModel.Store.SP_Tags_GetByTagID">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="furniShopModel.SP_Tags_GetByTagID_Result">
+                <ScalarProperty Name="TagID" ColumnName="TagID" />
+                <ScalarProperty Name="TagName" ColumnName="TagName" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_Tags_INSERT" FunctionName="furniShopModel.Store.SP_Tags_INSERT" />
+          <FunctionImportMapping FunctionImportName="SP_Tags_UPDATE" FunctionName="furniShopModel.Store.SP_Tags_UPDATE" />
+          <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="furniShopModel.Store.sp_upgraddiagrams" />
+          <FunctionImportMapping FunctionImportName="SP_Users_DELETE" FunctionName="furniShopModel.Store.SP_Users_DELETE" />
+          <FunctionImportMapping FunctionImportName="SP_Users_GetAll" FunctionName="furniShopModel.Store.SP_Users_GetAll">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="furniShopModel.SP_Users_GetAll_Result">
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="PassWord" ColumnName="PassWord" />
+                <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_Users_GetByUserID" FunctionName="furniShopModel.Store.SP_Users_GetByUserID">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="furniShopModel.SP_Users_GetByUserID_Result">
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="PassWord" ColumnName="PassWord" />
+                <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_Users_INSERT" FunctionName="furniShopModel.Store.SP_Users_INSERT" />
+          <FunctionImportMapping FunctionImportName="SP_Users_UPDATE" FunctionName="furniShopModel.Store.SP_Users_UPDATE" />
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

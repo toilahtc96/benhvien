@@ -1,0 +1,535 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link href="/templates/300-up-105/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=3.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="refresh" content="5400" />
+<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+
+<meta http-equiv="Pragma" content="no-cache"/>
+<meta http-equiv="Expires" content="-1"/>
+<meta http-equiv="Cache-Control" content="no-cache"/>
+
+<meta name="keywords" content="Phòng Khám Đa Khoa Thiên Hòa"/>
+<meta name="description" content="Phòng Khám Đa Khoa Thiên Hòa"/>
+<meta name="robots" content="index, follow"  />
+<meta name="googlebot" content="index, follow">
+<meta name="revisit-after" content="1 days" />
+<meta name="generator" content="Phòng Khám Đa Khoa Thiên Hòa" />
+<meta name="rating" content="General">
+
+<meta property="og:url" content="http://demophongkham1.web30s.vn/">
+<meta property="og:description" content="Phòng Khám Đa Khoa Thiên Hòa">
+<meta property="og:title" content="Phòng Khám Đa Khoa Thiên Hòa">
+<meta property="og:image" content="http://demophongkham1.web30s.vn/datafiles/1/baiviet/14818824944091_logo.png">
+<meta property="og:site_name" content="demophongkham1.web30s.vn">
+<meta property="og:type" content="product" />
+<meta property="og:locale" content="vi_VN" />
+<meta itemprop="image" content="http://demophongkham1.web30s.vn/datafiles/1/baiviet/14818824944091_logo.png">
+
+<meta property="article:section" content="Phòng Khám Đa Khoa Thiên Hòa" />
+<meta property="article:tag" content="Phòng Khám Đa Khoa Thiên Hòa" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@web30s.vn" />
+<meta name="twitter:title" content="Phòng Khám Đa Khoa Thiên Hòa" />
+<meta name="twitter:description" content="Phòng Khám Đa Khoa Thiên Hòa" />
+<meta name="twitter:image" content="http://demophongkham1.web30s.vn/datafiles/1/baiviet/14818824944091_logo.png" />
+<meta name="twitter:url" content="http://demophongkham1.web30s.vn/" />
+
+<title>Phòng Khám Đa Khoa Thiên Hòa</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="http://demophongkham1.web30s.vn/datafiles/1/baiviet/14818824944091_logo.png"/>
+
+<script type="text/javascript" src="http://demophongkham1.web30s.vn/js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="http://demophongkham1.web30s.vn/js/divbox.js"></script>
+<script type="text/javascript" src="http://demophongkham1.web30s.vn/js/me.js"></script>
+<script type='text/javascript' src='http://demophongkham1.web30s.vn/js/jquery.easing.1.3.js'></script> 
+<script type="text/javascript" src="http://demophongkham1.web30s.vn/js/swfobject.js" charset="utf-8"></script>
+<script type="text/javascript" src="http://demophongkham1.web30s.vn/js/jquery.bxslider.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="http://demophongkham1.web30s.vn/js/md5.js"></script>
+<script type="text/javascript" src="http://demophongkham1.web30s.vn/js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+
+<link href="http://demophongkham1.web30s.vn/css/font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+        <link type="text/css" rel="stylesheet" href="http://demophongkham1.web30s.vn/templates/300-up-105/css/style.css" />
+        <link href="http://demophongkham1.web30s.vn/css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
+    <link href="http://demophongkham1.web30s.vn/css/global.css" rel="stylesheet" type="text/css">
+    <link href="http://demophongkham1.web30s.vn/css/divbox.css" rel="stylesheet" type="text/css">
+    <link href="http://demophongkham1.web30s.vn/css/bxslider.css" rel="stylesheet" type="text/css">
+        <link href="/templates/300-up-105/css/animate.css" rel="stylesheet" media="screen">
+<script src="/templates/300-up-105/js/bootstrap.min.js" type="text/javascript"></script> 
+<script src="/templates/300-up-105/js/jquery.nav.js" type="text/javascript"></script> 
+<script src="/templates/300-up-105/js/custom.js" type="text/javascript"></script> 
+<link rel='stylesheet' id='gfont-style-css'  href='http://fonts.googleapis.com/css?family=Roboto%3A100%2C300%2C300italic%2C400%2C400italic%2C500%2C700%2C900%7CRoboto+Slab%3A300%2C400%2C700%7CArapey%3A400%2C400italic%7CLobster%7CCinzel%7CPoiret+One%3A400%7CJosefin+Sans%3A400%7CDomine%3A400&#038;ver=4.4.5' type='text/css' media='all' />
+</head>
+<body class="cbp-spmenu-push">
+		<div class="head_top header_admin">
+		<div class="bg_top"><script>
+	function jsupdate(k,idclass,jscolor) {
+	    if(k==0) 		$("."+idclass).css("background-color","#"+jscolor);
+	    else if (k==1)	$("."+idclass).css("color","#"+jscolor);
+	}
+</script>
+        </div>
+	</div>
+	<header class="header">
+  	<div class="container">
+	    <nav class="navbar navbar-inverse" role="navigation">
+	      	<div class="navbar-header">
+	        	<button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+	        	<a href="http://demophongkham1.web30s.vn" class="navbar-brand scroll-top logo  animated bounceInLeft"><img alt='Phòng Khám Đa Khoa Thiên Hòa' class='img_logo' src='http://demophongkham1.web30s.vn/datafiles/1/baiviet/14818824944091_logo.png'></a> 
+	      	</div>
+	      	<div id="main-nav" class="collapse navbar-collapse">
+  <ul class="nav navbar-nav" id="mainNav">
+          <li class=" active" id="firstLink">
+        <a href="#home" class="scroll-link">trang chủ</a>
+      </li>
+
+            <li class="">
+                    <a href='#aboutUs' class='scroll-link' >giới thiệu</a>
+                </li>
+
+      <li class="">
+          <a href="#services" class="scroll-link" >dịch vụ</a>
+                </li>
+      <li class="">
+        <a  href="#work" class="scroll-link" >cơ sở vật chất</a>
+              </li>
+
+      <li class=" ">
+        <a href='#team' class='scroll-link' >BÁC SĨ chuyên khoa</a>      </li>
+      <li class=""><a  href="#contactUs" class="scroll-link" >liên hệ</a></li>     
+    <li>
+          </li>
+  </ul>
+</div>	    </nav>
+  	</div>
+</header>
+<div id="#top"></div>	<article>
+  		<section class="content gallery pad1" style='padding:0'>
+      		<div class="midle_main_idclass fix1200_cus1">
+      			<section id="home">
+  <div class="banner-container"> <img src="http://demophongkham1.web30s.vn/datafiles/1/sub_banner/14819400075882_14818825223963_banner-bg.jpg" alt="CHÂN THÀNH - THÂN THIỆN - TRÁCH NHIỆM" />
+    <div class="container banner-content">
+      <div class="hero-text animated fadeInDownBig">
+        <h1 class="responsive-headline" >CHÂN THÀNH - THÂN THIỆN - TRÁCH NHIỆM</h1>
+        <a href="#basics" class="arrow-link"> <i class="fa fa-arrow-circle-down fa-2x"></i> </a>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="clear"></div>						
+
+<section id="services" class="page-section colord">
+  <div class="container">
+    <div class="heading text-center"> 
+      <h2>DỊCH VỤ</h2>
+      <p>Trang thiết bị hiện đại, bác sỹ gần 20 năm nghiệm, phương pháp hỗ trợ điều trị bệnh tiên tiến nhất hiện nay, chế độ làm việc không đợi chờ, máy móc thiết bị y tế được nhập khẩu từ các nước Anh Mỹ, Pháp, cùng hệ thống phòng hồi sức, phòng tiểu phẫu, phòng thủ thuật, phòng xét nghiệm… đạt chuẩn y tế.</p>
+    </div>
+    <div> 
+      <div class='col-md-3 text-center c1 SHOW_popup' data='/Benh-vo-sinh-349093' > 
+							<img src='/datafiles/1/17-12-2016/14819362108722_1.jpg' alt='Bệnh vô sinh'>
+					        <h3><span class='id-color'>Bệnh vô sinh</span></h3>
+					        <p>Hiện nay, kh&ocirc;ng &iacute;t cặp vợ chồng phải đối mặt với t&igrave;nh trạng v&ocirc; sinh - hiếm muộn, nhiều gia đ&igrave;nh tỏ ra &aacute;p đặt khi cho rằng t&igrave;nh trạng n&agrave;y l&agrave; do nữ giới kh&ocirc;ng c&oacute; khả năng sinh con.</p>
+					     </div><div class='col-md-3 text-center c2 SHOW_popup' data='/Benh-xa-hoi-349106' > 
+							<img src='/datafiles/1/17-12-2016/14819362971592_2.jpg' alt='Bệnh xã hội'>
+					        <h3><span class='id-color'>Bệnh xã hội</span></h3>
+					        <p>Bệnh x&atilde; hội l&agrave; những bệnh l&yacute; nguy hiểm, c&oacute; khả năng l&acirc;y lan nhanh ch&oacute;ng chủ yếu qua quan hệ t&igrave;nh dục kh&ocirc;ng an to&agrave;n. Theo số liệu thống k&ecirc; c&oacute; tới 20 loại bệnh x&atilde; hội...</p>
+					      </div><div class='col-md-3 text-center c1 SHOW_popup' data='/Benh-phu-khoa-349107' > 
+							<img src='/datafiles/1/17-12-2016/14819363592233_3.jpg' alt='Bệnh phụ khoa'>
+					        <h3><span class='id-color'>Bệnh phụ khoa</span></h3>
+					        <p>Bệnh phụ khoa lu&ocirc;n c&oacute; cảm gi&aacute;c kh&oacute; chịu, mệt mỏi v&igrave; v&ugrave;ng k&iacute;n c&oacute; m&ugrave;i h&ocirc;i, ngứa r&aacute;t..,l&agrave;m ảnh hưởng đến sức khỏe v&agrave; cuộc sống. Đặc biệt nguy hiểm khi chị em đang...</p>
+					     </div><div class='col-md-3 text-center c2 SHOW_popup' data='/Benh-nam-khoa-349108' > 
+							<img src='/datafiles/1/17-12-2016/14819364149400_4.jpg' alt='Bệnh nam khoa'>
+					        <h3><span class='id-color'>Bệnh nam khoa</span></h3>
+					        <p>Hiện nay, tỷ lệ nam giới gặp phải những vấn đề trục trặc về sức khỏe sinh l&yacute; ng&agrave;y một gia tăng. Nhưng do t&acirc;m l&yacute; e sợ, xấu hổ m&agrave; ph&aacute;i mạnh đ&atilde; lựa chọn kh&ocirc;ng điều trị...</p>
+					      </div>    </div>
+  </div>
+</section>
+<section id="aboutUs">
+  <div class="container">
+    <div class="heading text-center"> 
+      <!-- Heading -->
+      <h2>VỀ CHÚNG TÔI </h2>
+      <p>Phòng khám đa khoa Thiên Hòa được bình chọn là một trong những cơ sở y tế uy tín, chất lượng nhất hiện nay. Phòng khám đa khoa Thiên Hòa sở hữu đội ngũ y bác sĩ chuyên khoa giỏi, áp dụng kỹ thuật khám chữa bệnh hiện đại cùng với trang bị y tế, cơ sở vật chất đạt chuẩn y tế. Hàng năm phòng khám Thiên Hòa đã thăm khám và chữa trị cho rất nhiều bệnh nhân sớm thoát khỏi bệnh tật, vui sống hạnh phúc bên gia đình, người thân.</p>
+    </div>
+    <div class="  feature design">
+      <div class="six columns feature-media left"> 
+      <img src="http://demophongkham1.web30s.vn/datafiles/1/kietxuat/14819368149859_feature-img-1.png" alt="Phòng khám đa khoa Thiên Hòa"> </div>
+      <div class="six columns right">
+        <h3>Phòng khám đa khoa Thiên Hòa</h3>
+        <div>
+          <p>Ph&ograve;ng kh&aacute;m c&oacute; đội ngũ y b&aacute;c sỹ nam khoa, b&aacute;c sĩ bệnh trĩ hậu m&ocirc;n, b&aacute;c sĩ bệnh x&atilde; hội với gần 20 năm kinh nghiệm, từng c&ocirc;ng t&aacute;c l&agrave;m việc tại c&aacute;c bệnh viện trung ương, tham gia kh&oacute;a tu nghiệp ngắn v&agrave; d&agrave;i hạn, c&oacute; đội ngũ b&aacute;c sĩ, chuy&ecirc;n gia y tế từ H&agrave;n Quốc để tư vấn v&agrave; hướng dẫn.</p>
+<p>Nhận thấy y khoa l&agrave; lĩnh lực c&oacute; sự thay đổi kh&ocirc;ng ngừng cho n&ecirc;n những năm qua ch&uacute;ng t&ocirc;i lu&ocirc;n cử c&aacute;n bộ, b&aacute;c sĩ tham gia c&aacute;c lớp tập huấn, đ&agrave;o tạo ngắn hạn, hơn nữa lu&ocirc;n tiếp nhận, chuyển giao c&aacute;c kỹ thuật hỗ trợ chữa bệnh hiện nay, nhằm đạt kết quả hỗ trợ chữa trị tốt nhất, tiết kiệm tiền bạc cho người bệnh.</p>
+<p>Hơn nữa với ti&ecirc;u ch&iacute; xem bệnh nh&acirc;n như người nh&agrave;, lu&ocirc;n lắng nghe t&acirc;m tư nguyện vọng của từng bệnh nh&acirc;n, giải đ&aacute;p những ho&agrave;i nghi thắc mắc của người bệnh để khiến người bệnh thoải m&aacute;i t&acirc;m l&yacute;, y&ecirc;n t&acirc;m hỗ trợ điều trị lu&ocirc;n l&agrave; mục ti&ecirc;u của đội ngũ y b&aacute;c sĩ của ch&uacute;ng t&ocirc;i.</p>        </div>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</section>
+<section id="work" class="page-section page">
+  <div class="container text-center">
+    <div class="heading">
+      <h2>CƠ SỞ VẬT CHẤT</h2>
+      <p>Hàng loạt các máy móc trang thiết bị hiện đại được phòng khám nhập khẩu từ các nước như Mỹ, Nhật, Đức… như máy hỗ trợ điều trị sùi mào gà ALA - PDT, máy điều trị trĩ PPH và HCPT, máy nội soi hậu môn Hàn Quốc, máy Viba, sóng ngắn, sóng không gian, máy siêu âm, máy CT… giúp cho quá trình thăm khám và hỗ trợ điều trị các bệnh nam khoa, bệnh xã hội, bệnh trĩ hậu môn trực tràng nhanh chóng, an toàn, đạt hiệu quả tốt nhất.</p>
+      <!-- <a data="http://demodungcuthethao1.web30s.vn/" class="SHOW_popup" style="color: #fff">Click</a> -->
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="portfolio">
+          <ul class="items list-unstyled clearfix animated fadeInRight showing" data-animation="fadeInRight" style="position: relative;  ">
+            <li class='item branding' > 
+							<a data='/Doi-ngu-y-ta-349122' class='fancybox SHOW_popup'> <img src='/datafiles/1/17-12-2016/14819436919467_phong-kham-nha-khoa.jpg' alt='Đội ngủ y tá'>
+				              <div class='overlay'> 
+				                <div class='dv-table'>
+				                  <div class='dv-table-cell'>
+				                    <span>Đội ngủ y tá</span> 
+				                  </div>
+				                </div>
+				                
+				              </div>
+				            </a> 
+			            </li><li class='item photography' > 
+					<a data='/Phong-kham-349121' class='fancybox SHOW_popup'> 
+						<img src='/datafiles/1/17-12-2016/14819436296472_GOI-KHAM-SUC-KHOE-TONG-QUAT-PHONG-K_20131219151341960.jpg' alt='Phòng khám'>
+			              <div class='overlay'> 
+			                <div class='dv-table'>
+			                  <div class='dv-table-cell'>
+			                    <span>Phòng khám</span> 
+			                  </div>
+			                </div>
+			            </div>
+		            </a> 
+	            </li><li class='item branding' > 
+							<a data='/Khong-gian-phong-kham-349120' class='fancybox SHOW_popup'> <img src='/datafiles/1/17-12-2016/14819433874525_6.jpg' alt='Không gian phòng khám'>
+				              <div class='overlay'> 
+				                <div class='dv-table'>
+				                  <div class='dv-table-cell'>
+				                    <span>Không gian phòng khám</span> 
+				                  </div>
+				                </div>
+				                
+				              </div>
+				            </a> 
+			            </li><li class='item photography' > 
+					<a data='/Phong-phau-thuat-349119' class='fancybox SHOW_popup'> 
+						<img src='/datafiles/1/17-12-2016/14819433403278_5.jpg' alt='Phòng phẩu thuật'>
+			              <div class='overlay'> 
+			                <div class='dv-table'>
+			                  <div class='dv-table-cell'>
+			                    <span>Phòng phẩu thuật</span> 
+			                  </div>
+			                </div>
+			            </div>
+		            </a> 
+	            </li><li class='item branding' > 
+							<a data='/Phong-hoi-suc-349118' class='fancybox SHOW_popup'> <img src='/datafiles/1/17-12-2016/14819432802825_phong2giuong.jpg' alt='Phòng hồi sức'>
+				              <div class='overlay'> 
+				                <div class='dv-table'>
+				                  <div class='dv-table-cell'>
+				                    <span>Phòng hồi sức</span> 
+				                  </div>
+				                </div>
+				                
+				              </div>
+				            </a> 
+			            </li><li class='item photography' > 
+					<a data='/Phong-khach-Thien-Hoa-349117' class='fancybox SHOW_popup'> 
+						<img src='/datafiles/1/17-12-2016/14819430377406_3.jpg' alt='Phòng khách Thiên Hòa'>
+			              <div class='overlay'> 
+			                <div class='dv-table'>
+			                  <div class='dv-table-cell'>
+			                    <span>Phòng khách Thiên Hòa</span> 
+			                  </div>
+			                </div>
+			            </div>
+		            </a> 
+	            </li><li class='item branding' > 
+							<a data='/May-chup-X-Quang-349116' class='fancybox SHOW_popup'> <img src='/datafiles/1/17-12-2016/14819429514704_2.jpg' alt='Mãy chup X-Quang'>
+				              <div class='overlay'> 
+				                <div class='dv-table'>
+				                  <div class='dv-table-cell'>
+				                    <span>Mãy chup X-Quang</span> 
+				                  </div>
+				                </div>
+				                
+				              </div>
+				            </a> 
+			            </li><li class='item photography' > 
+					<a data='/Phong-mo-Thien-Hoa-349114' class='fancybox SHOW_popup'> 
+						<img src='/datafiles/1/17-12-2016/14819428651611_1.jpg' alt='Phòng mỗ Thiên Hòa'>
+			              <div class='overlay'> 
+			                <div class='dv-table'>
+			                  <div class='dv-table-cell'>
+			                    <span>Phòng mỗ Thiên Hòa</span> 
+			                  </div>
+			                </div>
+			            </div>
+		            </a> 
+	            </li>          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="team" class="page-section">
+  <div class="container">
+    <div class="heading text-center"> 
+      <h2>Bác sĩ chuyên khoa</h2>
+      <p>Với phương châm “chăm sóc bệnh nhân như người thân của mình”, hơn ai hết đội ngũ y bác sĩ tại Thiên Hòa luôn cố gắng làm tròn sứ mệnh người thầy thuốc “đặt y đức lên hàng đầu”, vì vậy ngoài khám chữa bệnh tận tâm các bác sĩ còn tư vấn cho bệnh nhân cách chăm sóc sức khỏe sau điều trị để bệnh nhanh hồi phục và hạn chế khả năng tái phát.</p>
+    </div>
+    <div class="team-content">
+      <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-6  col-min-12"> 
+          <div class="team-member pDark"> 
+            <div class="member-img"> 
+              <img class="img-responsive" src="http://demophongkham1.web30s.vn/datafiles/1/sub_banner/14819370944948_11.jpg" alt="Bs. Mr Nam"> 
+            </div>
+            <h4>Bs. Mr Nam</h4>
+            <span class="pos">P. Bệnh nam khoa</span> 
+          </div>
+        </div>
+                <div class="col-md-3 col-sm-6 col-xs-6  col-min-12"> 
+          <div class="team-member pDark"> 
+            <div class="member-img"> 
+              <img class="img-responsive" src="http://demophongkham1.web30s.vn/datafiles/1/sub_banner/14819371885665_22.jpg" alt="Bs. Ms Yến"> 
+            </div>
+            <h4>Bs. Ms Yến</h4>
+            <span class="pos">P. Bệnh phụ khoa</span> 
+          </div>
+        </div>
+                <div class="col-md-3 col-sm-6 col-xs-6  col-min-12"> 
+          <div class="team-member pDark"> 
+            <div class="member-img"> 
+              <img class="img-responsive" src="http://demophongkham1.web30s.vn/datafiles/1/sub_banner/14819372082333_33.jpg" alt="Bs. Mr Minh"> 
+            </div>
+            <h4>Bs. Mr Minh</h4>
+            <span class="pos">P. Bệnh xã hội</span> 
+          </div>
+        </div>
+                <div class="col-md-3 col-sm-6 col-xs-6  col-min-12"> 
+          <div class="team-member pDark"> 
+            <div class="member-img"> 
+              <img class="img-responsive" src="http://demophongkham1.web30s.vn/datafiles/1/sub_banner/14819372226600_44.jpg" alt="Bs. Mr An"> 
+            </div>
+            <h4>Bs. Mr An</h4>
+            <span class="pos">P. Bệnh vô sinh</span> 
+          </div>
+        </div>
+              </div>
+    </div>
+  </div>
+</section>
+<section id="contactUs" class="contact-parlex" style="background-image: url('http://demophongkham1.web30s.vn/datafiles/1/sub_banner/14819400566970_banner-bg-1.jpg');">
+  <div class="parlex-back">
+    <div class="container">
+      <div class="row">
+        <div class="heading text-center"> 
+          <h2>LIÊN HỆ</h2>
+          <p>Phòng khám làm việc từ 8h -20h tất cả các ngày trong tuần, kể cả các ngày lễ giúp bệnh nhân chủ động chọn giờ thăm khám. Đặc biệt thủ tục đơn giản, bệnh nhân không phải bốc số, không chờ đợi, không chen lấn.</p>
+        </div>
+      </div>
+      <div class="row mrgn30 dv-footer">
+        <div class="col-sm-12 col-md-12"> 
+          <div id="showText">	     <div class="showText">
+    <h4>Địa chỉ:</h4>
+<p>245A Nguyễn Đ&igrave;nh Chiểu, Q3, TpHCM</p>
+<p>750 Sư Vạn Hạnh, Phường 12, Quận 10, TpHCM</p>
+<p>79 Đường số 6, Hưng Phước 4, Ph&uacute; Mỹ Hưng, Quận 7, Tp. Hồ Ch&iacute; Minh</p>
+<h4>Số điện thoại:&nbsp;0983 323 333</h4>
+<h4>Hotline: 1900 9477</h4>	</div>
+      <div class="contact">
+    <form action="http://demophongkham1.web30s.vn/contact/" method="post" class="formBox" name="FormNameContact" id="FormNameContact">
+	<input type="hidden" name="goilienhe" value="1"  />
+      <div class="left">
+        <li class="name">
+          <input name="tendaydu" type="text" placeholder="Họ tên" value="" onFocus="if (this.value == ''){this.value='';}" onBlur="if (this.value == '') {this.value='';}"/>
+        </li>
+        <li class="phone">
+          <input name="dienthoai" type="text" placeholder="Điện thoại" value="" onFocus="if (this.value == ''){this.value='';}" onBlur="if (this.value == '') {this.value='';}"/>
+        </li>
+        <li class="mail">
+          <input name="email" type="text" placeholder="Email" value="Email" onFocus="if (this.value == 'Email'){this.value='';}" onBlur="if (this.value == '') {this.value='Email';}"/>
+        </li>
+        <li class="local">
+          <input name="diachi" type="text" placeholder="Địa chỉ" value="" onFocus="if (this.value == ''){this.value='';}" onBlur="if (this.value == '') {this.value='';}"/>
+        </li>
+        <li style="display: none;">
+         	<div class="imgcode">847228</div>
+        </li>
+      </div>
+      <div class="right">
+        <li class="mess">
+          <textarea name="noidung" cols="" rows="" placeholder="Nội dung" value="" onFocus="if (this.value == ''){this.value='';}" onBlur="if (this.value == '') {this.value='';}"></textarea>
+        </li>
+        <li class="code">
+          <div class="left"><input name="mabaove" class="haimabaove" type="text" placeholder="Mã số" value="" onFocus="if (this.value == ''){this.value='';}" onBlur="if (this.value == '') {this.value='';}"/></div><div class="imgcode">847228</div>
+        </li>
+        <div class="haibuttom">
+        <a onclick="document.getElementById('FormNameContact').reset()" style="cursor:pointer" class="button submitbutton">Làm lại</a>
+        <a onclick="document.getElementById('FormNameContact').submit()" style="cursor:pointer" class="button submitbutton">Gởi đi</a> </div>
+        </div>
+      <div class="clr"></div>
+    </form>
+  </div>
+  
+  <div class="map">
+    <script src="//maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=AIzaSyAKUuXw8s42trJRIlpJkkc9204AfUxlhcI" type="text/javascript"></script>
+ <script type="text/javascript">
+ 	 var toggleState = 1;
+    function initialize() {
+      if (GBrowserIsCompatible()) {
+		var map = new GMap2(document.getElementById("map_canvas"));
+		  	map.setCenter(new GLatLng(10.791633, 106.702628), 15);
+		  	var bounds = map.getBounds();
+			var point = new GLatLng(10.791633, 106.702628);
+			map.addOverlay(new GMarker(point));
+		  	map.setUIToDefault();
+			map.openInfoWindowHtml(map.getCenter(), "<img src='/datafiles/1/baiviet/thumb_14818824944091_logo.png' width='100' align='left'><strong>Phòng Khám Đa Khoa Thiên Hòa</strong> <br> : 254A Nguyễn Đình Chiểu - Q3 - TpHCM <br> Phone: 1900 585 895 (24/7)<br> Email: admin@demophongkham1.vn"); 
+	  }
+    }
+ </script>
+ 				
+						<script>
+							$(document).ready(function(){
+								initialize();
+							})
+						</script>
+						                <div id='map_canvas' style='width:100%; height:500px; color:#000;'></div>
+                  </div>
+ </div>
+        </div>
+        <div class="clear"></div>
+        <div class="container">
+          <div class="social text-center"> 
+            <a href="https://twitter.com/wwwpavietnamcom" target="_blank"><i class="fa fa-twitter"></i></a> 
+            <a href="https://www.facebook.com/www.pavietnam.net" target="_blank"><i class="fa fa-facebook"></i></a> 
+            <a href="https://plus.google.com/114627120430815730885/posts" target="_blank"><i class="fa fa-dribbble"></i></a> 
+            <a href="https://plus.google.com/114627120430815730885/posts" target="_blank"><i class="fa fa-flickr"></i></a> 
+            <a href="https://www.youtube.com/channel/UC2CD0jJ4HZLCZReyCyzwp0g" target="_blank"><i class="fa fa-github"></i></a> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>			</div>
+		</section>
+	</article>
+	
+
+
+<section class="copyright">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center"><span class="footer_copyright"><a target="_blank" href="http://web.pavietnam.vn/" alt ="Thiết Kế Website" title="Thiết Kế Website" class="a_copyright">Thiết Kế Website bởi P.A Việt Nam</a></span></div>
+    </div>
+  </div>
+</section>
+<a href="#top" class="topHome"><i class="fa fa-chevron-up fa-2x"></i></a> 
+
+<div class="dv-popop">
+  <div class="dv-popclick dong_pop"></div>
+  <div class="popup-detal container">
+    <div class="popup-detal-pos">
+      <a class="dong_pop css_dong_pop">&nbsp;</a>
+      <div class="popup-detal-cont">
+        <div class="ajax-content">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+  $(".SHOW_popup").click(function(){
+    $(".dv-popop").show();
+    $(".ajax-content").html('<img src="/templates/300-up-105/images/loading.gif" class="img_loadding">');
+    var href = $(this).attr("data");
+    $.ajax({
+      type: "POST",
+      url: "http://demophongkham1.web30s.vn/",
+      data: {"href": "http://demophongkham1.web30s.vn" + href},
+      success: function(response)
+      {
+        console.log(response)
+        $(".ajax-content").html(response);
+      }
+    });
+  });
+
+  $(".dong_pop").click(function(){
+    $(".dv-popop").hide();
+  });
+
+  $(".scroll-link").click(function(){
+    var toggle = $(".navbar-toggle").is(":visible");
+    if (toggle) {
+      $(".navbar-collapse").collapse('hide');
+    }
+  })
+  
+</script>	<script type="text/javascript">
+	$('a.lightbox').divbox();
+</script> 
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;//vi_VN //en_US
+  js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.7&appId=1568565433443656";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<style>
+#cfacebook{ position: fixed; bottom: 0px; right: 8px; z-index: 999999999999999; width: 300px; height: auto; box-shadow: 6px 6px 6px 10px rgba(0,0,0,0.2); border-top-left-radius: 5px; border-top-right-radius: 5px; overflow: hidden; }
+#cfacebook .fchat{float: left; width: 100%; height: 400px; overflow: hidden; display: none; background-color: #fff;}
+#cfacebook .fchat .chat-single{float: left; line-height: 25px; line-height: 25px; color: #333; width: 100%;}
+#cfacebook .fchat .chat-single a{float: right; text-decoration: none; margin-right: 10px; color: #888; font-size: 12px;}
+#cfacebook .fchat .chat-single a:hover{color: #222;}
+#cfacebook .fchat .fb-page{margin-top:0px; float: left;}
+#cfacebook a.chat_fb{ float: left; padding: 0 25px; width: 300px; color: #fff; text-decoration: none; height: 40px; line-height: 40px; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1); background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAqCAMAAABFoMFOAAAAWlBMV…8/UxBxQDQuFwlpqgBZBq6+P+unVY1GnDgwqbD2zGz5e1lBdwvGGPE6OgAAAABJRU5ErkJggg==); background-repeat: repeat-x; background-size: auto; background-position: 0 0; background-color: #0065BF; border: 0; border-bottom: 1px solid #0065BF; z-index: 9999999; margin-right: 12px; font-size: 18px;}
+#cfacebook a.chat_fb:hover{color: yellow; text-decoration: none;}
+.fchat_fb_showhi_hide{display: none !important}
+.fchat_fb_showhi_show{display: block !important}
+.cur{cursor: pointer;}
+</style>
+<script>
+    function fchat()
+	    {
+	            var tchat= document.getElementById("tchat").value;
+	            if(tchat==0 || tchat=='0')
+	            {                
+	                document.getElementById("fchat").style.display = "block";
+	                document.getElementById("tchat").value=1;
+	            }else{
+	                document.getElementById("fchat").style.display = "none";
+	                document.getElementById("tchat").value=0;
+	            }             
+	    }
+    function SHOWHI_fb(argument) {
+    	if($(".fchat_fb_showhi_show").length > 0)
+    	{
+    		console.log('1');
+    		$(".fchat_fb_showhi").removeClass("fchat_fb_showhi_show");
+    		$(".fchat_fb_showhi").addClass("fchat_fb_showhi_hide");
+    	}
+    	else 
+    	{
+    		$(".fchat_fb_showhi").removeClass("fchat_fb_showhi_hide");
+    		$(".fchat_fb_showhi").addClass("fchat_fb_showhi_show");
+			console.log('1')
+    	}
+    }
+    
+    setTimeout(function() { 
+    	$(".fchat_fb_showhi").addClass("fchat_fb_showhi_show");
+	}, 15000);
+	
+</script>
+		
+</body>
+</html>

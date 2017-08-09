@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="benhvienModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="benhvienEntities1" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="sp_alterdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_creatediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="SP_Doctors_DELETE">
+      <Parameter Name="ID" Mode="In" Type="Guid" />
+    </FunctionImport>
+    <FunctionImport Name="SP_Doctors_GetAll" ReturnType="Collection(benhvienModel.SP_Doctors_GetAll_Result)" />
+    <FunctionImport Name="SP_Doctors_GetByID" ReturnType="Collection(benhvienModel.SP_Doctors_GetByID_Result)">
+      <Parameter Name="ID" Mode="In" Type="Guid" />
+    </FunctionImport>
+    <FunctionImport Name="SP_Doctors_INSERT">
+      <Parameter Name="ID" Mode="In" Type="Guid" />
+      <Parameter Name="Name" Mode="In" Type="String" />
+      <Parameter Name="Images" Mode="In" Type="String" />
+      <Parameter Name="Description" Mode="In" Type="String" />
+      <Parameter Name="Status" Mode="In" Type="Boolean" />
+      <Parameter Name="MedicalName" Mode="In" Type="String" />
+      <Parameter Name="IDkhoa" Mode="In" Type="Guid" />
+    </FunctionImport>
+    <FunctionImport Name="SP_Doctors_UPDATE">
+      <Parameter Name="ID" Mode="In" Type="Guid" />
+      <Parameter Name="Name" Mode="In" Type="String" />
+      <Parameter Name="Images" Mode="In" Type="String" />
+      <Parameter Name="Description" Mode="In" Type="String" />
+      <Parameter Name="Status" Mode="In" Type="Boolean" />
+      <Parameter Name="MedicalName" Mode="In" Type="String" />
+      <Parameter Name="IDkhoa" Mode="In" Type="Guid" />
+    </FunctionImport>
+    <FunctionImport Name="sp_dropdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_Equipments_DELETE">
+      <Parameter Name="ID" Mode="In" Type="Guid" />
+    </FunctionImport>
+    <FunctionImport Name="SP_Equipments_GetAll" ReturnType="Collection(benhvienModel.SP_Equipments_GetAll_Result)" />
+    <FunctionImport Name="SP_Equipments_GetByID" ReturnType="Collection(benhvienModel.SP_Equipments_GetByID_Result)">
+      <Parameter Name="ID" Mode="In" Type="Guid" />
+    </FunctionImport>
+    <FunctionImport Name="SP_Equipments_INSERT">
+      <Parameter Name="ID" Mode="In" Type="Guid" />
+      <Parameter Name="Name" Mode="In" Type="String" />
+      <Parameter Name="Details" Mode="In" Type="String" />
+      <Parameter Name="Images" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_Equipments_UPDATE">
+      <Parameter Name="ID" Mode="In" Type="Guid" />
+      <Parameter Name="Name" Mode="In" Type="String" />
+      <Parameter Name="Details" Mode="In" Type="String" />
+      <Parameter Name="Images" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_Feedbacks_DELETE">
+      <Parameter Name="ID" Mode="In" Type="Guid" />
+    </FunctionImport>
+    <FunctionImport Name="SP_Feedbacks_GetAll" ReturnType="Collection(benhvienModel.SP_Feedbacks_GetAll_Result)" />
+    <FunctionImport Name="SP_Feedbacks_GetByID" ReturnType="Collection(benhvienModel.SP_Feedbacks_GetByID_Result)">
+      <Parameter Name="ID" Mode="In" Type="Guid" />
+    </FunctionImport>
+    <FunctionImport Name="SP_Feedbacks_INSERT">
+      <Parameter Name="ID" Mode="In" Type="Guid" />
+      <Parameter Name="CustommerName" Mode="In" Type="String" />
+      <Parameter Name="PhoneNumber" Mode="In" Type="String" />
+      <Parameter Name="Email" Mode="In" Type="String" />
+      <Parameter Name="NoiDung" Mode="In" Type="String" />
+      <Parameter Name="CreateDate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="SP_Feedbacks_UPDATE">
+      <Parameter Name="ID" Mode="In" Type="Guid" />
+      <Parameter Name="CustommerName" Mode="In" Type="String" />
+      <Parameter Name="PhoneNumber" Mode="In" Type="String" />
+      <Parameter Name="Email" Mode="In" Type="String" />
+      <Parameter Name="NoiDung" Mode="In" Type="String" />
+      <Parameter Name="CreateDate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(benhvienModel.sp_helpdiagramdefinition_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(benhvienModel.sp_helpdiagrams_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_Medicals_DELETE">
+      <Parameter Name="ID" Mode="In" Type="Guid" />
+    </FunctionImport>
+    <FunctionImport Name="SP_Medicals_GetAll" ReturnType="Collection(benhvienModel.SP_Medicals_GetAll_Result)" />
+    <FunctionImport Name="SP_Medicals_GetByID" ReturnType="Collection(benhvienModel.SP_Medicals_GetByID_Result)">
+      <Parameter Name="ID" Mode="In" Type="Guid" />
+    </FunctionImport>
+    <FunctionImport Name="SP_Medicals_INSERT">
+      <Parameter Name="ID" Mode="In" Type="Guid" />
+      <Parameter Name="Name" Mode="In" Type="String" />
+      <Parameter Name="Description" Mode="In" Type="String" />
+      <Parameter Name="Images" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_Medicals_UPDATE">
+      <Parameter Name="ID" Mode="In" Type="Guid" />
+      <Parameter Name="Name" Mode="In" Type="String" />
+      <Parameter Name="Description" Mode="In" Type="String" />
+      <Parameter Name="Images" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_Menu_DELETE">
+      <Parameter Name="ID" Mode="In" Type="Guid" />
+    </FunctionImport>
+    <FunctionImport Name="SP_Menu_GetAll" ReturnType="Collection(benhvienModel.SP_Menu_GetAll_Result)" />
+    <FunctionImport Name="SP_Menu_GetByID" ReturnType="Collection(benhvienModel.SP_Menu_GetByID_Result)">
+      <Parameter Name="ID" Mode="In" Type="Guid" />
+    </FunctionImport>
+    <FunctionImport Name="SP_Menu_INSERT">
+      <Parameter Name="ID" Mode="In" Type="Guid" />
+      <Parameter Name="MenuItem1" Mode="In" Type="String" />
+      <Parameter Name="MenuItem2" Mode="In" Type="String" />
+      <Parameter Name="MenuItem3" Mode="In" Type="String" />
+      <Parameter Name="MenuItem4" Mode="In" Type="String" />
+      <Parameter Name="MenuItem5" Mode="In" Type="String" />
+      <Parameter Name="MenuItem6" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_Menu_UPDATE">
+      <Parameter Name="ID" Mode="In" Type="Guid" />
+      <Parameter Name="MenuItem1" Mode="In" Type="String" />
+      <Parameter Name="MenuItem2" Mode="In" Type="String" />
+      <Parameter Name="MenuItem3" Mode="In" Type="String" />
+      <Parameter Name="MenuItem4" Mode="In" Type="String" />
+      <Parameter Name="MenuItem5" Mode="In" Type="String" />
+      <Parameter Name="MenuItem6" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_renamediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="new_diagramname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_Services_DELETE">
+      <Parameter Name="ID" Mode="In" Type="Guid" />
+    </FunctionImport>
+    <FunctionImport Name="SP_Services_GetAll" ReturnType="Collection(benhvienModel.SP_Services_GetAll_Result)" />
+    <FunctionImport Name="SP_Services_GetByID" ReturnType="Collection(benhvienModel.SP_Services_GetByID_Result)">
+      <Parameter Name="ID" Mode="In" Type="Guid" />
+    </FunctionImport>
+    <FunctionImport Name="SP_Services_INSERT">
+      <Parameter Name="ID" Mode="In" Type="Guid" />
+      <Parameter Name="TitleDichvu" Mode="In" Type="String" />
+      <Parameter Name="TitleGioiThieu" Mode="In" Type="String" />
+      <Parameter Name="TitlePhongKham" Mode="In" Type="String" />
+      <Parameter Name="TitleCosovatchat" Mode="In" Type="String" />
+      <Parameter Name="TitleChuyenkhoa" Mode="In" Type="String" />
+      <Parameter Name="TitleLienhe" Mode="In" Type="String" />
+      <Parameter Name="DescriptionDichvu" Mode="In" Type="String" />
+      <Parameter Name="DescriptionGioithieu" Mode="In" Type="String" />
+      <Parameter Name="DescriptionPhongkham" Mode="In" Type="String" />
+      <Parameter Name="DescriptionCosovatchat" Mode="In" Type="String" />
+      <Parameter Name="DescriptionChuyenKhoa" Mode="In" Type="String" />
+      <Parameter Name="DescriptionLienHe" Mode="In" Type="String" />
+      <Parameter Name="DetailDichvu" Mode="In" Type="String" />
+      <Parameter Name="DetailGioithieu" Mode="In" Type="String" />
+      <Parameter Name="DetailPhongkham" Mode="In" Type="String" />
+      <Parameter Name="DetailCosovatchat" Mode="In" Type="String" />
+      <Parameter Name="DetailChuyenkhoa" Mode="In" Type="String" />
+      <Parameter Name="DetailLienhe" Mode="In" Type="String" />
+      <Parameter Name="Images" Mode="In" Type="String" />
+      <Parameter Name="Address" Mode="In" Type="String" />
+      <Parameter Name="HotLine" Mode="In" Type="String" />
+      <Parameter Name="Phone" Mode="In" Type="String" />
+      <Parameter Name="Logo" Mode="In" Type="String" />
+      <Parameter Name="BackGround" Mode="In" Type="String" />
+      <Parameter Name="Slogan" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_Services_UPDATE">
+      <Parameter Name="ID" Mode="In" Type="Guid" />
+      <Parameter Name="TitleDichvu" Mode="In" Type="String" />
+      <Parameter Name="TitleGioiThieu" Mode="In" Type="String" />
+      <Parameter Name="TitlePhongKham" Mode="In" Type="String" />
+      <Parameter Name="TitleCosovatchat" Mode="In" Type="String" />
+      <Parameter Name="TitleChuyenkhoa" Mode="In" Type="String" />
+      <Parameter Name="TitleLienhe" Mode="In" Type="String" />
+      <Parameter Name="DescriptionDichvu" Mode="In" Type="String" />
+      <Parameter Name="DescriptionGioithieu" Mode="In" Type="String" />
+      <Parameter Name="DescriptionPhongkham" Mode="In" Type="String" />
+      <Parameter Name="DescriptionCosovatchat" Mode="In" Type="String" />
+      <Parameter Name="DescriptionChuyenKhoa" Mode="In" Type="String" />
+      <Parameter Name="DescriptionLienHe" Mode="In" Type="String" />
+      <Parameter Name="DetailDichvu" Mode="In" Type="String" />
+      <Parameter Name="DetailGioithieu" Mode="In" Type="String" />
+      <Parameter Name="DetailPhongkham" Mode="In" Type="String" />
+      <Parameter Name="DetailCosovatchat" Mode="In" Type="String" />
+      <Parameter Name="DetailChuyenkhoa" Mode="In" Type="String" />
+      <Parameter Name="DetailLienhe" Mode="In" Type="String" />
+      <Parameter Name="Images" Mode="In" Type="String" />
+      <Parameter Name="Address" Mode="In" Type="String" />
+      <Parameter Name="HotLine" Mode="In" Type="String" />
+      <Parameter Name="Phone" Mode="In" Type="String" />
+      <Parameter Name="Logo" Mode="In" Type="String" />
+      <Parameter Name="BackGround" Mode="In" Type="String" />
+      <Parameter Name="Slogan" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_upgraddiagrams" />
+    <FunctionImport Name="SP_User_DELETE">
+      <Parameter Name="UserName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_User_GetAll" ReturnType="Collection(benhvienModel.SP_User_GetAll_Result)" />
+    <FunctionImport Name="SP_User_GetByUserName" ReturnType="Collection(benhvienModel.SP_User_GetByUserName_Result)">
+      <Parameter Name="UserName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_User_INSERT">
+      <Parameter Name="UserName" Mode="In" Type="String" />
+      <Parameter Name="Name" Mode="In" Type="String" />
+      <Parameter Name="PassWord" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_User_UPDATE">
+      <Parameter Name="UserName" Mode="In" Type="String" />
+      <Parameter Name="Name" Mode="In" Type="String" />
+      <Parameter Name="PassWord" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="SP_Doctors_GetAll_Result">
+    <Property Type="Guid" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Images" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="Description" Nullable="true" />
+    <Property Type="Boolean" Name="Status" Nullable="false" />
+    <Property Type="String" Name="MedicalName" Nullable="true" MaxLength="50" />
+    <Property Type="Guid" Name="IDkhoa" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="SP_Doctors_GetByID_Result">
+    <Property Type="Guid" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Images" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="Description" Nullable="true" />
+    <Property Type="Boolean" Name="Status" Nullable="false" />
+    <Property Type="String" Name="MedicalName" Nullable="true" MaxLength="50" />
+    <Property Type="Guid" Name="IDkhoa" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="SP_Equipments_GetAll_Result">
+    <Property Type="Guid" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Details" Nullable="true" />
+    <Property Type="String" Name="Images" Nullable="true" MaxLength="250" />
+  </ComplexType>
+  <ComplexType Name="SP_Equipments_GetByID_Result">
+    <Property Type="Guid" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Details" Nullable="true" />
+    <Property Type="String" Name="Images" Nullable="true" MaxLength="250" />
+  </ComplexType>
+  <ComplexType Name="SP_Feedbacks_GetAll_Result">
+    <Property Type="Guid" Name="ID" Nullable="false" />
+    <Property Type="String" Name="CustommerName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="PhoneNumber" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Email" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="NoiDung" Nullable="true" MaxLength="500" />
+    <Property Type="DateTime" Name="CreateDate" Nullable="false" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="SP_Feedbacks_GetByID_Result">
+    <Property Type="Guid" Name="ID" Nullable="false" />
+    <Property Type="String" Name="CustommerName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="PhoneNumber" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Email" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="NoiDung" Nullable="true" MaxLength="500" />
+    <Property Type="DateTime" Name="CreateDate" Nullable="false" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagramdefinition_Result">
+    <Property Type="Int32" Name="version" Nullable="true" />
+    <Property Type="Binary" Name="definition" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagrams_Result">
+    <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="OwnerID" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="SP_Medicals_GetAll_Result">
+    <Property Type="Guid" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Description" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="Images" Nullable="true" MaxLength="250" />
+  </ComplexType>
+  <ComplexType Name="SP_Medicals_GetByID_Result">
+    <Property Type="Guid" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Description" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="Images" Nullable="true" MaxLength="250" />
+  </ComplexType>
+  <ComplexType Name="SP_Menu_GetAll_Result">
+    <Property Type="Guid" Name="ID" Nullable="false" />
+    <Property Type="String" Name="MenuItem1" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="MenuItem2" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="MenuItem3" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="MenuItem4" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="MenuItem5" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="MenuItem6" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="SP_Menu_GetByID_Result">
+    <Property Type="Guid" Name="ID" Nullable="false" />
+    <Property Type="String" Name="MenuItem1" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="MenuItem2" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="MenuItem3" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="MenuItem4" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="MenuItem5" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="MenuItem6" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="SP_Services_GetAll_Result">
+    <Property Type="Guid" Name="ID" Nullable="false" />
+    <Property Type="String" Name="TitleDichvu" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="TitleGioiThieu" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="TitlePhongKham" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="TitleCosovatchat" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="TitleChuyenkhoa" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="TitleLienhe" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="DescriptionDichvu" Nullable="true" />
+    <Property Type="String" Name="DescriptionGioithieu" Nullable="true" />
+    <Property Type="String" Name="DescriptionPhongkham" Nullable="true" />
+    <Property Type="String" Name="DescriptionCosovatchat" Nullable="true" />
+    <Property Type="String" Name="DescriptionChuyenKhoa" Nullable="true" />
+    <Property Type="String" Name="DescriptionLienHe" Nullable="true" />
+    <Property Type="String" Name="DetailDichvu" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DetailGioithieu" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DetailPhongkham" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DetailCosovatchat" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DetailChuyenkhoa" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DetailLienhe" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Images" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="Address" Nullable="true" />
+    <Property Type="String" Name="HotLine" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Phone" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Logo" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="BackGround" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="Slogan" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="SP_Services_GetByID_Result">
+    <Property Type="Guid" Name="ID" Nullable="false" />
+    <Property Type="String" Name="TitleDichvu" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="TitleGioiThieu" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="TitlePhongKham" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="TitleCosovatchat" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="TitleChuyenkhoa" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="TitleLienhe" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="DescriptionDichvu" Nullable="true" />
+    <Property Type="String" Name="DescriptionGioithieu" Nullable="true" />
+    <Property Type="String" Name="DescriptionPhongkham" Nullable="true" />
+    <Property Type="String" Name="DescriptionCosovatchat" Nullable="true" />
+    <Property Type="String" Name="DescriptionChuyenKhoa" Nullable="true" />
+    <Property Type="String" Name="DescriptionLienHe" Nullable="true" />
+    <Property Type="String" Name="DetailDichvu" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DetailGioithieu" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DetailPhongkham" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DetailCosovatchat" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DetailChuyenkhoa" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DetailLienhe" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Images" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="Address" Nullable="true" />
+    <Property Type="String" Name="HotLine" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Phone" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Logo" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="BackGround" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="Slogan" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="SP_User_GetAll_Result">
+    <Property Type="String" Name="UserName" Nullable="false" MaxLength="80" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="PassWord" Nullable="false" MaxLength="80" />
+  </ComplexType>
+  <ComplexType Name="SP_User_GetByUserName_Result">
+    <Property Type="String" Name="UserName" Nullable="false" MaxLength="80" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="PassWord" Nullable="false" MaxLength="80" />
+  </ComplexType>
+</Schema>

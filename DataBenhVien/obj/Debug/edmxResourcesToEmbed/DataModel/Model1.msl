@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="benhvienModelStoreContainer" CdmEntityContainer="benhvienEntities1">
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="benhvienModel.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="benhvienModel.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="SP_Doctors_DELETE" FunctionName="benhvienModel.Store.SP_Doctors_DELETE" />
+    <FunctionImportMapping FunctionImportName="SP_Doctors_GetAll" FunctionName="benhvienModel.Store.SP_Doctors_GetAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="benhvienModel.SP_Doctors_GetAll_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Images" ColumnName="Images" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="MedicalName" ColumnName="MedicalName" />
+          <ScalarProperty Name="IDkhoa" ColumnName="IDkhoa" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_Doctors_GetByID" FunctionName="benhvienModel.Store.SP_Doctors_GetByID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="benhvienModel.SP_Doctors_GetByID_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Images" ColumnName="Images" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="MedicalName" ColumnName="MedicalName" />
+          <ScalarProperty Name="IDkhoa" ColumnName="IDkhoa" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_Doctors_INSERT" FunctionName="benhvienModel.Store.SP_Doctors_INSERT" />
+    <FunctionImportMapping FunctionImportName="SP_Doctors_UPDATE" FunctionName="benhvienModel.Store.SP_Doctors_UPDATE" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="benhvienModel.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="SP_Equipments_DELETE" FunctionName="benhvienModel.Store.SP_Equipments_DELETE" />
+    <FunctionImportMapping FunctionImportName="SP_Equipments_GetAll" FunctionName="benhvienModel.Store.SP_Equipments_GetAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="benhvienModel.SP_Equipments_GetAll_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Details" ColumnName="Details" />
+          <ScalarProperty Name="Images" ColumnName="Images" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_Equipments_GetByID" FunctionName="benhvienModel.Store.SP_Equipments_GetByID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="benhvienModel.SP_Equipments_GetByID_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Details" ColumnName="Details" />
+          <ScalarProperty Name="Images" ColumnName="Images" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_Equipments_INSERT" FunctionName="benhvienModel.Store.SP_Equipments_INSERT" />
+    <FunctionImportMapping FunctionImportName="SP_Equipments_UPDATE" FunctionName="benhvienModel.Store.SP_Equipments_UPDATE" />
+    <FunctionImportMapping FunctionImportName="SP_Feedbacks_DELETE" FunctionName="benhvienModel.Store.SP_Feedbacks_DELETE" />
+    <FunctionImportMapping FunctionImportName="SP_Feedbacks_GetAll" FunctionName="benhvienModel.Store.SP_Feedbacks_GetAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="benhvienModel.SP_Feedbacks_GetAll_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CustommerName" ColumnName="CustommerName" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="NoiDung" ColumnName="NoiDung" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_Feedbacks_GetByID" FunctionName="benhvienModel.Store.SP_Feedbacks_GetByID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="benhvienModel.SP_Feedbacks_GetByID_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CustommerName" ColumnName="CustommerName" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="NoiDung" ColumnName="NoiDung" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_Feedbacks_INSERT" FunctionName="benhvienModel.Store.SP_Feedbacks_INSERT" />
+    <FunctionImportMapping FunctionImportName="SP_Feedbacks_UPDATE" FunctionName="benhvienModel.Store.SP_Feedbacks_UPDATE" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="benhvienModel.Store.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="benhvienModel.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="benhvienModel.Store.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="benhvienModel.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_Medicals_DELETE" FunctionName="benhvienModel.Store.SP_Medicals_DELETE" />
+    <FunctionImportMapping FunctionImportName="SP_Medicals_GetAll" FunctionName="benhvienModel.Store.SP_Medicals_GetAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="benhvienModel.SP_Medicals_GetAll_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Images" ColumnName="Images" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_Medicals_GetByID" FunctionName="benhvienModel.Store.SP_Medicals_GetByID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="benhvienModel.SP_Medicals_GetByID_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Images" ColumnName="Images" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_Medicals_INSERT" FunctionName="benhvienModel.Store.SP_Medicals_INSERT" />
+    <FunctionImportMapping FunctionImportName="SP_Medicals_UPDATE" FunctionName="benhvienModel.Store.SP_Medicals_UPDATE" />
+    <FunctionImportMapping FunctionImportName="SP_Menu_DELETE" FunctionName="benhvienModel.Store.SP_Menu_DELETE" />
+    <FunctionImportMapping FunctionImportName="SP_Menu_GetAll" FunctionName="benhvienModel.Store.SP_Menu_GetAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="benhvienModel.SP_Menu_GetAll_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MenuItem1" ColumnName="MenuItem1" />
+          <ScalarProperty Name="MenuItem2" ColumnName="MenuItem2" />
+          <ScalarProperty Name="MenuItem3" ColumnName="MenuItem3" />
+          <ScalarProperty Name="MenuItem4" ColumnName="MenuItem4" />
+          <ScalarProperty Name="MenuItem5" ColumnName="MenuItem5" />
+          <ScalarProperty Name="MenuItem6" ColumnName="MenuItem6" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_Menu_GetByID" FunctionName="benhvienModel.Store.SP_Menu_GetByID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="benhvienModel.SP_Menu_GetByID_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MenuItem1" ColumnName="MenuItem1" />
+          <ScalarProperty Name="MenuItem2" ColumnName="MenuItem2" />
+          <ScalarProperty Name="MenuItem3" ColumnName="MenuItem3" />
+          <ScalarProperty Name="MenuItem4" ColumnName="MenuItem4" />
+          <ScalarProperty Name="MenuItem5" ColumnName="MenuItem5" />
+          <ScalarProperty Name="MenuItem6" ColumnName="MenuItem6" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_Menu_INSERT" FunctionName="benhvienModel.Store.SP_Menu_INSERT" />
+    <FunctionImportMapping FunctionImportName="SP_Menu_UPDATE" FunctionName="benhvienModel.Store.SP_Menu_UPDATE" />
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="benhvienModel.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="SP_Services_DELETE" FunctionName="benhvienModel.Store.SP_Services_DELETE" />
+    <FunctionImportMapping FunctionImportName="SP_Services_GetAll" FunctionName="benhvienModel.Store.SP_Services_GetAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="benhvienModel.SP_Services_GetAll_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TitleDichvu" ColumnName="TitleDichvu" />
+          <ScalarProperty Name="TitleGioiThieu" ColumnName="TitleGioiThieu" />
+          <ScalarProperty Name="TitlePhongKham" ColumnName="TitlePhongKham" />
+          <ScalarProperty Name="TitleCosovatchat" ColumnName="TitleCosovatchat" />
+          <ScalarProperty Name="TitleChuyenkhoa" ColumnName="TitleChuyenkhoa" />
+          <ScalarProperty Name="TitleLienhe" ColumnName="TitleLienhe" />
+          <ScalarProperty Name="DescriptionDichvu" ColumnName="DescriptionDichvu" />
+          <ScalarProperty Name="DescriptionGioithieu" ColumnName="DescriptionGioithieu" />
+          <ScalarProperty Name="DescriptionPhongkham" ColumnName="DescriptionPhongkham" />
+          <ScalarProperty Name="DescriptionCosovatchat" ColumnName="DescriptionCosovatchat" />
+          <ScalarProperty Name="DescriptionChuyenKhoa" ColumnName="DescriptionChuyenKhoa" />
+          <ScalarProperty Name="DescriptionLienHe" ColumnName="DescriptionLienHe" />
+          <ScalarProperty Name="DetailDichvu" ColumnName="DetailDichvu" />
+          <ScalarProperty Name="DetailGioithieu" ColumnName="DetailGioithieu" />
+          <ScalarProperty Name="DetailPhongkham" ColumnName="DetailPhongkham" />
+          <ScalarProperty Name="DetailCosovatchat" ColumnName="DetailCosovatchat" />
+          <ScalarProperty Name="DetailChuyenkhoa" ColumnName="DetailChuyenkhoa" />
+          <ScalarProperty Name="DetailLienhe" ColumnName="DetailLienhe" />
+          <ScalarProperty Name="Images" ColumnName="Images" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="HotLine" ColumnName="HotLine" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Logo" ColumnName="Logo" />
+          <ScalarProperty Name="BackGround" ColumnName="BackGround" />
+          <ScalarProperty Name="Slogan" ColumnName="Slogan" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_Services_GetByID" FunctionName="benhvienModel.Store.SP_Services_GetByID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="benhvienModel.SP_Services_GetByID_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TitleDichvu" ColumnName="TitleDichvu" />
+          <ScalarProperty Name="TitleGioiThieu" ColumnName="TitleGioiThieu" />
+          <ScalarProperty Name="TitlePhongKham" ColumnName="TitlePhongKham" />
+          <ScalarProperty Name="TitleCosovatchat" ColumnName="TitleCosovatchat" />
+          <ScalarProperty Name="TitleChuyenkhoa" ColumnName="TitleChuyenkhoa" />
+          <ScalarProperty Name="TitleLienhe" ColumnName="TitleLienhe" />
+          <ScalarProperty Name="DescriptionDichvu" ColumnName="DescriptionDichvu" />
+          <ScalarProperty Name="DescriptionGioithieu" ColumnName="DescriptionGioithieu" />
+          <ScalarProperty Name="DescriptionPhongkham" ColumnName="DescriptionPhongkham" />
+          <ScalarProperty Name="DescriptionCosovatchat" ColumnName="DescriptionCosovatchat" />
+          <ScalarProperty Name="DescriptionChuyenKhoa" ColumnName="DescriptionChuyenKhoa" />
+          <ScalarProperty Name="DescriptionLienHe" ColumnName="DescriptionLienHe" />
+          <ScalarProperty Name="DetailDichvu" ColumnName="DetailDichvu" />
+          <ScalarProperty Name="DetailGioithieu" ColumnName="DetailGioithieu" />
+          <ScalarProperty Name="DetailPhongkham" ColumnName="DetailPhongkham" />
+          <ScalarProperty Name="DetailCosovatchat" ColumnName="DetailCosovatchat" />
+          <ScalarProperty Name="DetailChuyenkhoa" ColumnName="DetailChuyenkhoa" />
+          <ScalarProperty Name="DetailLienhe" ColumnName="DetailLienhe" />
+          <ScalarProperty Name="Images" ColumnName="Images" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="HotLine" ColumnName="HotLine" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Logo" ColumnName="Logo" />
+          <ScalarProperty Name="BackGround" ColumnName="BackGround" />
+          <ScalarProperty Name="Slogan" ColumnName="Slogan" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_Services_INSERT" FunctionName="benhvienModel.Store.SP_Services_INSERT" />
+    <FunctionImportMapping FunctionImportName="SP_Services_UPDATE" FunctionName="benhvienModel.Store.SP_Services_UPDATE" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="benhvienModel.Store.sp_upgraddiagrams" />
+    <FunctionImportMapping FunctionImportName="SP_User_DELETE" FunctionName="benhvienModel.Store.SP_User_DELETE" />
+    <FunctionImportMapping FunctionImportName="SP_User_GetAll" FunctionName="benhvienModel.Store.SP_User_GetAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="benhvienModel.SP_User_GetAll_Result">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="PassWord" ColumnName="PassWord" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_User_GetByUserName" FunctionName="benhvienModel.Store.SP_User_GetByUserName">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="benhvienModel.SP_User_GetByUserName_Result">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="PassWord" ColumnName="PassWord" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_User_INSERT" FunctionName="benhvienModel.Store.SP_User_INSERT" />
+    <FunctionImportMapping FunctionImportName="SP_User_UPDATE" FunctionName="benhvienModel.Store.SP_User_UPDATE" />
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,8 @@
+﻿@model WCF.BussinessObject.EntityObject.FeedbackObject
+@{
+    ViewBag.Title = "DeleteLienHe_clk";
+    Layout = "~/Areas/admin/Views/Shared/LayOut.cshtml";
+}
+<h2>Bạn Có Muốn Xóa?</h2>
+@Html.ActionLink("Xác Nhận", "DeleteDone", "EditLienHe", new { id = Model.ID }, new { @class = "btn btn-info" })
+@Html.ActionLink("Cancel", "Cancelbtn", "EditLienHe", null, new { @class = "btn btn-warning" })

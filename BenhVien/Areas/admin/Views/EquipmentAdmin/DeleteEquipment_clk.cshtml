@@ -1,0 +1,9 @@
+﻿@model WCF.BussinessObject.EntityObject.EquipmentObject
+@{
+    ViewBag.Title = "DeleteEquipment_clk";
+    Layout = "~/Areas/admin/Views/Shared/LayOut.cshtml";
+}
+
+<h2>Bạn Có Muốn Xóa?</h2>
+@Html.ActionLink("Xác Nhận","DeleteEquipment","EquipmentAdmin",new { id=Model.ID},new { @class="btn btn-info"})
+@Html.ActionLink("Cancel", "Cancelbt", "EquipmentAdmin",null, new { @class = "btn btn-warning" })

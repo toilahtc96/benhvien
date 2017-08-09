@@ -1,0 +1,448 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="furniShopModelStoreContainer" CdmEntityContainer="furniShopEntities">
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="furniShopModel.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="SP_Colors_DELETE" FunctionName="furniShopModel.Store.SP_Colors_DELETE" />
+    <FunctionImportMapping FunctionImportName="SP_Colors_GetAll" FunctionName="furniShopModel.Store.SP_Colors_GetAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="furniShopModel.SP_Colors_GetAll_Result">
+          <ScalarProperty Name="ColorID" ColumnName="ColorID" />
+          <ScalarProperty Name="ColorName" ColumnName="ColorName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_Colors_GetByColorID" FunctionName="furniShopModel.Store.SP_Colors_GetByColorID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="furniShopModel.SP_Colors_GetByColorID_Result">
+          <ScalarProperty Name="ColorID" ColumnName="ColorID" />
+          <ScalarProperty Name="ColorName" ColumnName="ColorName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_Colors_INSERT" FunctionName="furniShopModel.Store.SP_Colors_INSERT" />
+    <FunctionImportMapping FunctionImportName="SP_Colors_UPDATE" FunctionName="furniShopModel.Store.SP_Colors_UPDATE" />
+    <FunctionImportMapping FunctionImportName="SP_Companys_DELETE" FunctionName="furniShopModel.Store.SP_Companys_DELETE" />
+    <FunctionImportMapping FunctionImportName="SP_Companys_GetAll" FunctionName="furniShopModel.Store.SP_Companys_GetAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="furniShopModel.SP_Companys_GetAll_Result">
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_Companys_GetByCompanyID" FunctionName="furniShopModel.Store.SP_Companys_GetByCompanyID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="furniShopModel.SP_Companys_GetByCompanyID_Result">
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_Companys_INSERT" FunctionName="furniShopModel.Store.SP_Companys_INSERT" />
+    <FunctionImportMapping FunctionImportName="SP_Companys_UPDATE" FunctionName="furniShopModel.Store.SP_Companys_UPDATE" />
+    <FunctionImportMapping FunctionImportName="SP_Contacts_DELETE" FunctionName="furniShopModel.Store.SP_Contacts_DELETE" />
+    <FunctionImportMapping FunctionImportName="SP_Contacts_GetAll" FunctionName="furniShopModel.Store.SP_Contacts_GetAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="furniShopModel.SP_Contacts_GetAll_Result">
+          <ScalarProperty Name="ContactID" ColumnName="ContactID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_Contacts_GetByContactID" FunctionName="furniShopModel.Store.SP_Contacts_GetByContactID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="furniShopModel.SP_Contacts_GetByContactID_Result">
+          <ScalarProperty Name="ContactID" ColumnName="ContactID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_Contacts_INSERT" FunctionName="furniShopModel.Store.SP_Contacts_INSERT" />
+    <FunctionImportMapping FunctionImportName="SP_Contacts_UPDATE" FunctionName="furniShopModel.Store.SP_Contacts_UPDATE" />
+    <FunctionImportMapping FunctionImportName="SP_Countrys_DELETE" FunctionName="furniShopModel.Store.SP_Countrys_DELETE" />
+    <FunctionImportMapping FunctionImportName="SP_Countrys_GetAll" FunctionName="furniShopModel.Store.SP_Countrys_GetAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="furniShopModel.SP_Countrys_GetAll_Result">
+          <ScalarProperty Name="ContryID" ColumnName="ContryID" />
+          <ScalarProperty Name="ContryName" ColumnName="ContryName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_Countrys_GetByContryID" FunctionName="furniShopModel.Store.SP_Countrys_GetByContryID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="furniShopModel.SP_Countrys_GetByContryID_Result">
+          <ScalarProperty Name="ContryID" ColumnName="ContryID" />
+          <ScalarProperty Name="ContryName" ColumnName="ContryName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_Countrys_INSERT" FunctionName="furniShopModel.Store.SP_Countrys_INSERT" />
+    <FunctionImportMapping FunctionImportName="SP_Countrys_UPDATE" FunctionName="furniShopModel.Store.SP_Countrys_UPDATE" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="furniShopModel.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="furniShopModel.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="SP_Footers_DELETE" FunctionName="furniShopModel.Store.SP_Footers_DELETE" />
+    <FunctionImportMapping FunctionImportName="SP_Footers_GetAll" FunctionName="furniShopModel.Store.SP_Footers_GetAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="furniShopModel.SP_Footers_GetAll_Result">
+          <ScalarProperty Name="FooterID" ColumnName="FooterID" />
+          <ScalarProperty Name="FooterName" ColumnName="FooterName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_Footers_GetByFooterID" FunctionName="furniShopModel.Store.SP_Footers_GetByFooterID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="furniShopModel.SP_Footers_GetByFooterID_Result">
+          <ScalarProperty Name="FooterID" ColumnName="FooterID" />
+          <ScalarProperty Name="FooterName" ColumnName="FooterName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_Footers_INSERT" FunctionName="furniShopModel.Store.SP_Footers_INSERT" />
+    <FunctionImportMapping FunctionImportName="SP_Footers_UPDATE" FunctionName="furniShopModel.Store.SP_Footers_UPDATE" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="furniShopModel.Store.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="furniShopModel.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="furniShopModel.Store.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="furniShopModel.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_ImageProducts_DELETE" FunctionName="furniShopModel.Store.SP_ImageProducts_DELETE" />
+    <FunctionImportMapping FunctionImportName="SP_ImageProducts_GetAll" FunctionName="furniShopModel.Store.SP_ImageProducts_GetAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="furniShopModel.SP_ImageProducts_GetAll_Result">
+          <ScalarProperty Name="ImageProductID" ColumnName="ImageProductID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="URL" ColumnName="URL" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_ImageProducts_GetByImageProductID" FunctionName="furniShopModel.Store.SP_ImageProducts_GetByImageProductID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="furniShopModel.SP_ImageProducts_GetByImageProductID_Result">
+          <ScalarProperty Name="ImageProductID" ColumnName="ImageProductID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="URL" ColumnName="URL" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_ImageProducts_INSERT" FunctionName="furniShopModel.Store.SP_ImageProducts_INSERT" />
+    <FunctionImportMapping FunctionImportName="SP_ImageProducts_UPDATE" FunctionName="furniShopModel.Store.SP_ImageProducts_UPDATE" />
+    <FunctionImportMapping FunctionImportName="SP_Images_DELETE" FunctionName="furniShopModel.Store.SP_Images_DELETE" />
+    <FunctionImportMapping FunctionImportName="SP_Images_GetAll" FunctionName="furniShopModel.Store.SP_Images_GetAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="furniShopModel.SP_Images_GetAll_Result">
+          <ScalarProperty Name="ImageID" ColumnName="ImageID" />
+          <ScalarProperty Name="URL" ColumnName="URL" />
+          <ScalarProperty Name="BannerFlag" ColumnName="BannerFlag" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_Images_GetByImageID" FunctionName="furniShopModel.Store.SP_Images_GetByImageID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="furniShopModel.SP_Images_GetByImageID_Result">
+          <ScalarProperty Name="ImageID" ColumnName="ImageID" />
+          <ScalarProperty Name="URL" ColumnName="URL" />
+          <ScalarProperty Name="BannerFlag" ColumnName="BannerFlag" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_Images_INSERT" FunctionName="furniShopModel.Store.SP_Images_INSERT" />
+    <FunctionImportMapping FunctionImportName="SP_Images_UPDATE" FunctionName="furniShopModel.Store.SP_Images_UPDATE" />
+    <FunctionImportMapping FunctionImportName="SP_MenuGroups_DELETE" FunctionName="furniShopModel.Store.SP_MenuGroups_DELETE" />
+    <FunctionImportMapping FunctionImportName="SP_MenuGroups_GetAll" FunctionName="furniShopModel.Store.SP_MenuGroups_GetAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="furniShopModel.SP_MenuGroups_GetAll_Result">
+          <ScalarProperty Name="MenuGroupID" ColumnName="MenuGroupID" />
+          <ScalarProperty Name="MenuGroupName" ColumnName="MenuGroupName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_MenuGroups_GetByMenuGroupID" FunctionName="furniShopModel.Store.SP_MenuGroups_GetByMenuGroupID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="furniShopModel.SP_MenuGroups_GetByMenuGroupID_Result">
+          <ScalarProperty Name="MenuGroupID" ColumnName="MenuGroupID" />
+          <ScalarProperty Name="MenuGroupName" ColumnName="MenuGroupName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_MenuGroups_INSERT" FunctionName="furniShopModel.Store.SP_MenuGroups_INSERT" />
+    <FunctionImportMapping FunctionImportName="SP_MenuGroups_UPDATE" FunctionName="furniShopModel.Store.SP_MenuGroups_UPDATE" />
+    <FunctionImportMapping FunctionImportName="SP_MenuItems_DELETE" FunctionName="furniShopModel.Store.SP_MenuItems_DELETE" />
+    <FunctionImportMapping FunctionImportName="SP_MenuItems_GetAll" FunctionName="furniShopModel.Store.SP_MenuItems_GetAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="furniShopModel.SP_MenuItems_GetAll_Result">
+          <ScalarProperty Name="MenuItemID" ColumnName="MenuItemID" />
+          <ScalarProperty Name="MenuItemName" ColumnName="MenuItemName" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="URL" ColumnName="URL" />
+          <ScalarProperty Name="GroupID" ColumnName="GroupID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_MenuItems_GetByMenuItemID" FunctionName="furniShopModel.Store.SP_MenuItems_GetByMenuItemID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="furniShopModel.SP_MenuItems_GetByMenuItemID_Result">
+          <ScalarProperty Name="MenuItemID" ColumnName="MenuItemID" />
+          <ScalarProperty Name="MenuItemName" ColumnName="MenuItemName" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="URL" ColumnName="URL" />
+          <ScalarProperty Name="GroupID" ColumnName="GroupID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_MenuItems_INSERT" FunctionName="furniShopModel.Store.SP_MenuItems_INSERT" />
+    <FunctionImportMapping FunctionImportName="SP_MenuItems_UPDATE" FunctionName="furniShopModel.Store.SP_MenuItems_UPDATE" />
+    <FunctionImportMapping FunctionImportName="SP_OrderDetails_DELETE" FunctionName="furniShopModel.Store.SP_OrderDetails_DELETE" />
+    <FunctionImportMapping FunctionImportName="SP_OrderDetails_GetAll" FunctionName="furniShopModel.Store.SP_OrderDetails_GetAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="furniShopModel.SP_OrderDetails_GetAll_Result">
+          <ScalarProperty Name="OrderDetailID" ColumnName="OrderDetailID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_OrderDetails_GetByOrderDetailID" FunctionName="furniShopModel.Store.SP_OrderDetails_GetByOrderDetailID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="furniShopModel.SP_OrderDetails_GetByOrderDetailID_Result">
+          <ScalarProperty Name="OrderDetailID" ColumnName="OrderDetailID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_OrderDetails_INSERT" FunctionName="furniShopModel.Store.SP_OrderDetails_INSERT" />
+    <FunctionImportMapping FunctionImportName="SP_OrderDetails_UPDATE" FunctionName="furniShopModel.Store.SP_OrderDetails_UPDATE" />
+    <FunctionImportMapping FunctionImportName="SP_Orders_DELETE" FunctionName="furniShopModel.Store.SP_Orders_DELETE" />
+    <FunctionImportMapping FunctionImportName="SP_Orders_GetAll" FunctionName="furniShopModel.Store.SP_Orders_GetAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="furniShopModel.SP_Orders_GetAll_Result">
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="DateTime" ColumnName="DateTime" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_Orders_GetByOrderID" FunctionName="furniShopModel.Store.SP_Orders_GetByOrderID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="furniShopModel.SP_Orders_GetByOrderID_Result">
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="DateTime" ColumnName="DateTime" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_Orders_INSERT" FunctionName="furniShopModel.Store.SP_Orders_INSERT" />
+    <FunctionImportMapping FunctionImportName="SP_Orders_UPDATE" FunctionName="furniShopModel.Store.SP_Orders_UPDATE" />
+    <FunctionImportMapping FunctionImportName="SP_ProductCategorys_DELETE" FunctionName="furniShopModel.Store.SP_ProductCategorys_DELETE" />
+    <FunctionImportMapping FunctionImportName="SP_ProductCategorys_GetAll" FunctionName="furniShopModel.Store.SP_ProductCategorys_GetAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="furniShopModel.SP_ProductCategorys_GetAll_Result">
+          <ScalarProperty Name="ProductCategoryID" ColumnName="ProductCategoryID" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_ProductCategorys_GetByProductCategoryID" FunctionName="furniShopModel.Store.SP_ProductCategorys_GetByProductCategoryID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="furniShopModel.SP_ProductCategorys_GetByProductCategoryID_Result">
+          <ScalarProperty Name="ProductCategoryID" ColumnName="ProductCategoryID" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_ProductCategorys_INSERT" FunctionName="furniShopModel.Store.SP_ProductCategorys_INSERT" />
+    <FunctionImportMapping FunctionImportName="SP_ProductCategorys_UPDATE" FunctionName="furniShopModel.Store.SP_ProductCategorys_UPDATE" />
+    <FunctionImportMapping FunctionImportName="SP_ProductColors_DELETE" FunctionName="furniShopModel.Store.SP_ProductColors_DELETE" />
+    <FunctionImportMapping FunctionImportName="SP_ProductColors_GetAll" FunctionName="furniShopModel.Store.SP_ProductColors_GetAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="furniShopModel.SP_ProductColors_GetAll_Result">
+          <ScalarProperty Name="ProductColorID" ColumnName="ProductColorID" />
+          <ScalarProperty Name="ColorID" ColumnName="ColorID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_ProductColors_GetByProductColorID" FunctionName="furniShopModel.Store.SP_ProductColors_GetByProductColorID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="furniShopModel.SP_ProductColors_GetByProductColorID_Result">
+          <ScalarProperty Name="ProductColorID" ColumnName="ProductColorID" />
+          <ScalarProperty Name="ColorID" ColumnName="ColorID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_ProductColors_INSERT" FunctionName="furniShopModel.Store.SP_ProductColors_INSERT" />
+    <FunctionImportMapping FunctionImportName="SP_ProductColors_UPDATE" FunctionName="furniShopModel.Store.SP_ProductColors_UPDATE" />
+    <FunctionImportMapping FunctionImportName="SP_Products_DELETE" FunctionName="furniShopModel.Store.SP_Products_DELETE" />
+    <FunctionImportMapping FunctionImportName="SP_Products_GetAll" FunctionName="furniShopModel.Store.SP_Products_GetAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="furniShopModel.SP_Products_GetAll_Result">
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="HomeFlag" ColumnName="HomeFlag" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="Detail" ColumnName="Detail" />
+          <ScalarProperty Name="Sale" ColumnName="Sale" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_Products_GetByProductID" FunctionName="furniShopModel.Store.SP_Products_GetByProductID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="furniShopModel.SP_Products_GetByProductID_Result">
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="HomeFlag" ColumnName="HomeFlag" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="Detail" ColumnName="Detail" />
+          <ScalarProperty Name="Sale" ColumnName="Sale" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_Products_INSERT" FunctionName="furniShopModel.Store.SP_Products_INSERT" />
+    <FunctionImportMapping FunctionImportName="SP_Products_UPDATE" FunctionName="furniShopModel.Store.SP_Products_UPDATE" />
+    <FunctionImportMapping FunctionImportName="SP_ProductTags_DELETE" FunctionName="furniShopModel.Store.SP_ProductTags_DELETE" />
+    <FunctionImportMapping FunctionImportName="SP_ProductTags_GetAll" FunctionName="furniShopModel.Store.SP_ProductTags_GetAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="furniShopModel.SP_ProductTags_GetAll_Result">
+          <ScalarProperty Name="ProductTagID" ColumnName="ProductTagID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="TagID" ColumnName="TagID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_ProductTags_GetByProductTagID" FunctionName="furniShopModel.Store.SP_ProductTags_GetByProductTagID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="furniShopModel.SP_ProductTags_GetByProductTagID_Result">
+          <ScalarProperty Name="ProductTagID" ColumnName="ProductTagID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="TagID" ColumnName="TagID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_ProductTags_INSERT" FunctionName="furniShopModel.Store.SP_ProductTags_INSERT" />
+    <FunctionImportMapping FunctionImportName="SP_ProductTags_UPDATE" FunctionName="furniShopModel.Store.SP_ProductTags_UPDATE" />
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="furniShopModel.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="SP_Roles_DELETE" FunctionName="furniShopModel.Store.SP_Roles_DELETE" />
+    <FunctionImportMapping FunctionImportName="SP_Roles_GetAll" FunctionName="furniShopModel.Store.SP_Roles_GetAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="furniShopModel.SP_Roles_GetAll_Result">
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_Roles_GetByRoleID" FunctionName="furniShopModel.Store.SP_Roles_GetByRoleID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="furniShopModel.SP_Roles_GetByRoleID_Result">
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_Roles_INSERT" FunctionName="furniShopModel.Store.SP_Roles_INSERT" />
+    <FunctionImportMapping FunctionImportName="SP_Roles_UPDATE" FunctionName="furniShopModel.Store.SP_Roles_UPDATE" />
+    <FunctionImportMapping FunctionImportName="SP_ShopAddress_DELETE" FunctionName="furniShopModel.Store.SP_ShopAddress_DELETE" />
+    <FunctionImportMapping FunctionImportName="SP_ShopAddress_GetAll" FunctionName="furniShopModel.Store.SP_ShopAddress_GetAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="furniShopModel.SP_ShopAddress_GetAll_Result">
+          <ScalarProperty Name="ShopAddressID" ColumnName="ShopAddressID" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_ShopAddress_GetByShopAddressID" FunctionName="furniShopModel.Store.SP_ShopAddress_GetByShopAddressID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="furniShopModel.SP_ShopAddress_GetByShopAddressID_Result">
+          <ScalarProperty Name="ShopAddressID" ColumnName="ShopAddressID" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_ShopAddress_INSERT" FunctionName="furniShopModel.Store.SP_ShopAddress_INSERT" />
+    <FunctionImportMapping FunctionImportName="SP_ShopAddress_UPDATE" FunctionName="furniShopModel.Store.SP_ShopAddress_UPDATE" />
+    <FunctionImportMapping FunctionImportName="SP_Tags_DELETE" FunctionName="furniShopModel.Store.SP_Tags_DELETE" />
+    <FunctionImportMapping FunctionImportName="SP_Tags_GetAll" FunctionName="furniShopModel.Store.SP_Tags_GetAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="furniShopModel.SP_Tags_GetAll_Result">
+          <ScalarProperty Name="TagID" ColumnName="TagID" />
+          <ScalarProperty Name="TagName" ColumnName="TagName" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_Tags_GetByTagID" FunctionName="furniShopModel.Store.SP_Tags_GetByTagID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="furniShopModel.SP_Tags_GetByTagID_Result">
+          <ScalarProperty Name="TagID" ColumnName="TagID" />
+          <ScalarProperty Name="TagName" ColumnName="TagName" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_Tags_INSERT" FunctionName="furniShopModel.Store.SP_Tags_INSERT" />
+    <FunctionImportMapping FunctionImportName="SP_Tags_UPDATE" FunctionName="furniShopModel.Store.SP_Tags_UPDATE" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="furniShopModel.Store.sp_upgraddiagrams" />
+    <FunctionImportMapping FunctionImportName="SP_Users_DELETE" FunctionName="furniShopModel.Store.SP_Users_DELETE" />
+    <FunctionImportMapping FunctionImportName="SP_Users_GetAll" FunctionName="furniShopModel.Store.SP_Users_GetAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="furniShopModel.SP_Users_GetAll_Result">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="PassWord" ColumnName="PassWord" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_Users_GetByUserID" FunctionName="furniShopModel.Store.SP_Users_GetByUserID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="furniShopModel.SP_Users_GetByUserID_Result">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="PassWord" ColumnName="PassWord" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_Users_INSERT" FunctionName="furniShopModel.Store.SP_Users_INSERT" />
+    <FunctionImportMapping FunctionImportName="SP_Users_UPDATE" FunctionName="furniShopModel.Store.SP_Users_UPDATE" />
+  </EntityContainerMapping>
+</Mapping>

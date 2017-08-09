@@ -1,0 +1,4 @@
+D:\Xulianh\WCF.BussinessObject\bin\Debug\WCF.BussinessObject.dll
+D:\Xulianh\WCF.BussinessObject\bin\Debug\WCF.BussinessObject.pdb
+D:\Xulianh\WCF.BussinessObject\obj\Debug\WCF.BussinessObject.dll
+D:\Xulianh\WCF.BussinessObject\obj\Debug\WCF.BussinessObject.pdb

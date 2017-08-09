@@ -1,0 +1,9 @@
+﻿@model WCF.BussinessObject.EntityObject.MenuObject
+@{
+    ViewBag.Title = "DeleteHeader_clk";
+    Layout = "~/Areas/admin/Views/Shared/LayOut.cshtml";
+}
+
+<h2>Bạn Có Muốn Xóa?</h2>
+@Html.ActionLink("Xác Nhận", "DeleteHeader", "EditHeader", new { id = Model.ID }, new { @class = "btn btn-info" })
+@Html.ActionLink("Cancel", "Cancelbt", "EditHeader", null, new { @class = "btn btn-warning" })

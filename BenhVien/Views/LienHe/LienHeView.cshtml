@@ -1,0 +1,28 @@
+﻿@model WCF.BussinessObject.EntityObject.FeedbackObject
+<div class="contact">
+   @using (Html.BeginForm("LienHePost", "LienHe", FormMethod.Post)) { 
+    <div class="left">
+        <ul>
+            <li class="name">
+                @Html.TextBoxFor(m => m.CustomerName, new { @class = "form-control", placeholder = "Nhập Tên..." })
+                @Html.ValidationMessage("name")
+            </li>
+            <li class="phone">
+                @Html.TextBoxFor(m => m.PhoneNumber, new { @class = "form-control", placeholder = "Nhập Số Điện Thoại..." })
+            </li>
+            <li class="mail">
+                @Html.TextBoxFor(m => m.Email, new { @class = "form-control", placeholder = "Nhập Email..." })
+            </li>
+            <li class="mail">
+                @Html.TextAreaFor(m => m.NoiDung, new { @class = "form-control", placeholder = "Nhập  Nội Dung..." })
+            </li>
+        </ul>
+    </div>
+    <div class="right">
+        <div class="haibuttom">
+            <input type="submit" value="Gởi đi" class="Button submitbutton">
+        </div>
+    </div>
+    }
+    <div class="clr"></div>
+</div>

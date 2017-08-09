@@ -1,0 +1,150 @@
+D:\Xulianh\BenhVien\bin\roslyn\csc.exe
+D:\Xulianh\BenhVien\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Xulianh\BenhVien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Xulianh\BenhVien\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Xulianh\BenhVien\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Xulianh\BenhVien\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Xulianh\BenhVien\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Xulianh\BenhVien\bin\roslyn\System.Collections.Immutable.dll
+D:\Xulianh\BenhVien\bin\roslyn\System.Reflection.Metadata.dll
+D:\Xulianh\BenhVien\bin\roslyn\vbc.exe
+D:\Xulianh\BenhVien\bin\roslyn\VBCSCompiler.exe
+D:\Xulianh\BenhVien\bin\roslyn\VBCSCompiler.exe.config
+D:\Xulianh\BenhVien\bin\BenhVien.dll.config
+D:\Xulianh\BenhVien\bin\BenhVien.dll
+D:\Xulianh\BenhVien\bin\BenhVien.pdb
+D:\Xulianh\BenhVien\bin\Antlr3.Runtime.dll
+D:\Xulianh\BenhVien\bin\DataBenhVien.dll
+D:\Xulianh\BenhVien\bin\EntityFramework.dll
+D:\Xulianh\BenhVien\bin\EntityFramework.SqlServer.dll
+D:\Xulianh\BenhVien\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Xulianh\BenhVien\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Xulianh\BenhVien\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Xulianh\BenhVien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Xulianh\BenhVien\bin\Microsoft.Owin.dll
+D:\Xulianh\BenhVien\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Xulianh\BenhVien\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Xulianh\BenhVien\bin\Microsoft.Owin.Security.dll
+D:\Xulianh\BenhVien\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Xulianh\BenhVien\bin\Microsoft.Owin.Security.Google.dll
+D:\Xulianh\BenhVien\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Xulianh\BenhVien\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Xulianh\BenhVien\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Xulianh\BenhVien\bin\Microsoft.Web.Infrastructure.dll
+D:\Xulianh\BenhVien\bin\Newtonsoft.Json.dll
+D:\Xulianh\BenhVien\bin\Owin.dll
+D:\Xulianh\BenhVien\bin\System.Web.Helpers.dll
+D:\Xulianh\BenhVien\bin\System.Web.Mvc.dll
+D:\Xulianh\BenhVien\bin\System.Web.Optimization.dll
+D:\Xulianh\BenhVien\bin\System.Web.Razor.dll
+D:\Xulianh\BenhVien\bin\System.Web.WebPages.Deployment.dll
+D:\Xulianh\BenhVien\bin\System.Web.WebPages.dll
+D:\Xulianh\BenhVien\bin\System.Web.WebPages.Razor.dll
+D:\Xulianh\BenhVien\bin\WCF.BussinessController.dll
+D:\Xulianh\BenhVien\bin\WCF.BussinessObject.dll
+D:\Xulianh\BenhVien\bin\WebGrease.dll
+D:\Xulianh\BenhVien\bin\DataBenhVien.pdb
+D:\Xulianh\BenhVien\bin\WCF.BussinessObject.pdb
+D:\Xulianh\BenhVien\bin\WCF.BussinessController.pdb
+D:\Xulianh\BenhVien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Xulianh\BenhVien\bin\System.Web.Helpers.xml
+D:\Xulianh\BenhVien\bin\System.Web.Mvc.xml
+D:\Xulianh\BenhVien\bin\System.Web.Optimization.xml
+D:\Xulianh\BenhVien\bin\System.Web.Razor.xml
+D:\Xulianh\BenhVien\bin\System.Web.WebPages.xml
+D:\Xulianh\BenhVien\bin\System.Web.WebPages.Deployment.xml
+D:\Xulianh\BenhVien\bin\System.Web.WebPages.Razor.xml
+D:\Xulianh\BenhVien\bin\Antlr3.Runtime.pdb
+D:\Xulianh\BenhVien\bin\Newtonsoft.Json.xml
+D:\Xulianh\BenhVien\bin\EntityFramework.xml
+D:\Xulianh\BenhVien\bin\EntityFramework.SqlServer.xml
+D:\Xulianh\BenhVien\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Xulianh\BenhVien\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Xulianh\BenhVien\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Xulianh\BenhVien\bin\Microsoft.Owin.xml
+D:\Xulianh\BenhVien\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Xulianh\BenhVien\bin\Microsoft.Owin.Security.xml
+D:\Xulianh\BenhVien\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Xulianh\BenhVien\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Xulianh\BenhVien\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Xulianh\BenhVien\bin\Microsoft.Owin.Security.Google.xml
+D:\Xulianh\BenhVien\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Xulianh\BenhVien\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Xulianh\BenhVien\obj\Debug\BenhVien.csprojResolveAssemblyReference.cache
+D:\Xulianh\BenhVien\obj\Debug\BenhVien.dll
+D:\Xulianh\BenhVien\obj\Debug\BenhVien.pdb
+D:\BV Source\benhvienSource\BenhVien\bin\roslyn\csc.exe
+D:\BV Source\benhvienSource\BenhVien\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\BV Source\benhvienSource\BenhVien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\BV Source\benhvienSource\BenhVien\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\BV Source\benhvienSource\BenhVien\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\BV Source\benhvienSource\BenhVien\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\BV Source\benhvienSource\BenhVien\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\BV Source\benhvienSource\BenhVien\bin\roslyn\System.Collections.Immutable.dll
+D:\BV Source\benhvienSource\BenhVien\bin\roslyn\System.Reflection.Metadata.dll
+D:\BV Source\benhvienSource\BenhVien\bin\roslyn\vbc.exe
+D:\BV Source\benhvienSource\BenhVien\bin\roslyn\VBCSCompiler.exe
+D:\BV Source\benhvienSource\BenhVien\bin\roslyn\VBCSCompiler.exe.config
+D:\BV Source\benhvienSource\BenhVien\bin\BenhVien.dll.config
+D:\BV Source\benhvienSource\BenhVien\bin\BenhVien.dll
+D:\BV Source\benhvienSource\BenhVien\bin\BenhVien.pdb
+D:\BV Source\benhvienSource\BenhVien\bin\Antlr3.Runtime.dll
+D:\BV Source\benhvienSource\BenhVien\bin\DataBenhVien.dll
+D:\BV Source\benhvienSource\BenhVien\bin\EntityFramework.dll
+D:\BV Source\benhvienSource\BenhVien\bin\EntityFramework.SqlServer.dll
+D:\BV Source\benhvienSource\BenhVien\bin\Microsoft.AspNet.Identity.Core.dll
+D:\BV Source\benhvienSource\BenhVien\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\BV Source\benhvienSource\BenhVien\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\BV Source\benhvienSource\BenhVien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\BV Source\benhvienSource\BenhVien\bin\Microsoft.Owin.dll
+D:\BV Source\benhvienSource\BenhVien\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\BV Source\benhvienSource\BenhVien\bin\Microsoft.Owin.Security.Cookies.dll
+D:\BV Source\benhvienSource\BenhVien\bin\Microsoft.Owin.Security.dll
+D:\BV Source\benhvienSource\BenhVien\bin\Microsoft.Owin.Security.Facebook.dll
+D:\BV Source\benhvienSource\BenhVien\bin\Microsoft.Owin.Security.Google.dll
+D:\BV Source\benhvienSource\BenhVien\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\BV Source\benhvienSource\BenhVien\bin\Microsoft.Owin.Security.OAuth.dll
+D:\BV Source\benhvienSource\BenhVien\bin\Microsoft.Owin.Security.Twitter.dll
+D:\BV Source\benhvienSource\BenhVien\bin\Microsoft.Web.Infrastructure.dll
+D:\BV Source\benhvienSource\BenhVien\bin\Newtonsoft.Json.dll
+D:\BV Source\benhvienSource\BenhVien\bin\Owin.dll
+D:\BV Source\benhvienSource\BenhVien\bin\System.Web.Helpers.dll
+D:\BV Source\benhvienSource\BenhVien\bin\System.Web.Mvc.dll
+D:\BV Source\benhvienSource\BenhVien\bin\System.Web.Optimization.dll
+D:\BV Source\benhvienSource\BenhVien\bin\System.Web.Razor.dll
+D:\BV Source\benhvienSource\BenhVien\bin\System.Web.WebPages.Deployment.dll
+D:\BV Source\benhvienSource\BenhVien\bin\System.Web.WebPages.dll
+D:\BV Source\benhvienSource\BenhVien\bin\System.Web.WebPages.Razor.dll
+D:\BV Source\benhvienSource\BenhVien\bin\WCF.BussinessController.dll
+D:\BV Source\benhvienSource\BenhVien\bin\WCF.BussinessObject.dll
+D:\BV Source\benhvienSource\BenhVien\bin\WebGrease.dll
+D:\BV Source\benhvienSource\BenhVien\bin\DataBenhVien.pdb
+D:\BV Source\benhvienSource\BenhVien\bin\WCF.BussinessObject.pdb
+D:\BV Source\benhvienSource\BenhVien\bin\WCF.BussinessController.pdb
+D:\BV Source\benhvienSource\BenhVien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\BV Source\benhvienSource\BenhVien\bin\System.Web.Helpers.xml
+D:\BV Source\benhvienSource\BenhVien\bin\System.Web.Mvc.xml
+D:\BV Source\benhvienSource\BenhVien\bin\System.Web.Optimization.xml
+D:\BV Source\benhvienSource\BenhVien\bin\System.Web.Razor.xml
+D:\BV Source\benhvienSource\BenhVien\bin\System.Web.WebPages.xml
+D:\BV Source\benhvienSource\BenhVien\bin\System.Web.WebPages.Deployment.xml
+D:\BV Source\benhvienSource\BenhVien\bin\System.Web.WebPages.Razor.xml
+D:\BV Source\benhvienSource\BenhVien\bin\Antlr3.Runtime.pdb
+D:\BV Source\benhvienSource\BenhVien\bin\Newtonsoft.Json.xml
+D:\BV Source\benhvienSource\BenhVien\bin\EntityFramework.xml
+D:\BV Source\benhvienSource\BenhVien\bin\EntityFramework.SqlServer.xml
+D:\BV Source\benhvienSource\BenhVien\bin\Microsoft.AspNet.Identity.Core.xml
+D:\BV Source\benhvienSource\BenhVien\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\BV Source\benhvienSource\BenhVien\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\BV Source\benhvienSource\BenhVien\bin\Microsoft.Owin.xml
+D:\BV Source\benhvienSource\BenhVien\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\BV Source\benhvienSource\BenhVien\bin\Microsoft.Owin.Security.xml
+D:\BV Source\benhvienSource\BenhVien\bin\Microsoft.Owin.Security.Facebook.xml
+D:\BV Source\benhvienSource\BenhVien\bin\Microsoft.Owin.Security.Cookies.xml
+D:\BV Source\benhvienSource\BenhVien\bin\Microsoft.Owin.Security.OAuth.xml
+D:\BV Source\benhvienSource\BenhVien\bin\Microsoft.Owin.Security.Google.xml
+D:\BV Source\benhvienSource\BenhVien\bin\Microsoft.Owin.Security.Twitter.xml
+D:\BV Source\benhvienSource\BenhVien\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\BV Source\benhvienSource\BenhVien\obj\Debug\BenhVien.csprojResolveAssemblyReference.cache
+D:\BV Source\benhvienSource\BenhVien\obj\Debug\BenhVien.dll
+D:\BV Source\benhvienSource\BenhVien\obj\Debug\BenhVien.pdb

@@ -1,0 +1,24 @@
+D:\Xulianh\DataBenhVien\bin\Debug\DataBenhVien.dll.config
+D:\Xulianh\DataBenhVien\bin\Debug\DataBenhVien.dll
+D:\Xulianh\DataBenhVien\bin\Debug\DataBenhVien.pdb
+D:\Xulianh\DataBenhVien\bin\Debug\EntityFramework.dll
+D:\Xulianh\DataBenhVien\bin\Debug\EntityFramework.SqlServer.dll
+D:\Xulianh\DataBenhVien\bin\Debug\WCF.BussinessObject.dll
+D:\Xulianh\DataBenhVien\bin\Debug\WCF.BussinessObject.pdb
+D:\Xulianh\DataBenhVien\bin\Debug\EntityFramework.xml
+D:\Xulianh\DataBenhVien\bin\Debug\EntityFramework.SqlServer.xml
+D:\Xulianh\DataBenhVien\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
+D:\Xulianh\DataBenhVien\obj\Debug\DataBenhVien.dll
+D:\Xulianh\DataBenhVien\obj\Debug\DataBenhVien.pdb
+D:\BV Source\benhvienSource\DataBenhVien\bin\Debug\DataBenhVien.dll.config
+D:\BV Source\benhvienSource\DataBenhVien\bin\Debug\DataBenhVien.dll
+D:\BV Source\benhvienSource\DataBenhVien\bin\Debug\DataBenhVien.pdb
+D:\BV Source\benhvienSource\DataBenhVien\bin\Debug\EntityFramework.dll
+D:\BV Source\benhvienSource\DataBenhVien\bin\Debug\EntityFramework.SqlServer.dll
+D:\BV Source\benhvienSource\DataBenhVien\bin\Debug\WCF.BussinessObject.dll
+D:\BV Source\benhvienSource\DataBenhVien\bin\Debug\WCF.BussinessObject.pdb
+D:\BV Source\benhvienSource\DataBenhVien\bin\Debug\EntityFramework.xml
+D:\BV Source\benhvienSource\DataBenhVien\bin\Debug\EntityFramework.SqlServer.xml
+D:\BV Source\benhvienSource\DataBenhVien\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
+D:\BV Source\benhvienSource\DataBenhVien\obj\Debug\DataBenhVien.dll
+D:\BV Source\benhvienSource\DataBenhVien\obj\Debug\DataBenhVien.pdb

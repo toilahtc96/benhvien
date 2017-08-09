@@ -1,0 +1,21 @@
+﻿@model List<WCF.BussinessObject.EntityObject.DoctorObject>
+ 
+<div class="team-content">
+    <div class="row">
+        @{
+            foreach (var item in Model)
+            {
+                var medical = new WCF.BussinessController.BCL.MedicalBCL().Medical_GetById(item.IDKhoa);
+                <div class="col-md-3 col-sm-6 col-xs-6  col-min-12">
+                    <div class="team-member pDark">
+                        <div class="member-img">
+                            <img class="img-responsive" src="@item.Images" alt="@item.Name">
+                        </div>
+                        <h4>@item.Name</h4>
+                        <span class="pos">P.@medical.Name</span>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+</div>

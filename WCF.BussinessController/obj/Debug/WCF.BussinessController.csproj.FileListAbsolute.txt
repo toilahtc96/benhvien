@@ -1,0 +1,28 @@
+D:\Xulianh\WCF.BussinessController\bin\Debug\WCF.BussinessController.dll.config
+D:\Xulianh\WCF.BussinessController\bin\Debug\WCF.BussinessController.dll
+D:\Xulianh\WCF.BussinessController\bin\Debug\WCF.BussinessController.pdb
+D:\Xulianh\WCF.BussinessController\bin\Debug\DataBenhVien.dll
+D:\Xulianh\WCF.BussinessController\bin\Debug\EntityFramework.dll
+D:\Xulianh\WCF.BussinessController\bin\Debug\EntityFramework.SqlServer.dll
+D:\Xulianh\WCF.BussinessController\bin\Debug\WCF.BussinessObject.dll
+D:\Xulianh\WCF.BussinessController\bin\Debug\DataBenhVien.pdb
+D:\Xulianh\WCF.BussinessController\bin\Debug\WCF.BussinessObject.pdb
+D:\Xulianh\WCF.BussinessController\bin\Debug\EntityFramework.xml
+D:\Xulianh\WCF.BussinessController\bin\Debug\EntityFramework.SqlServer.xml
+D:\Xulianh\WCF.BussinessController\obj\Debug\WCF.BussinessController.csprojResolveAssemblyReference.cache
+D:\Xulianh\WCF.BussinessController\obj\Debug\WCF.BussinessController.dll
+D:\Xulianh\WCF.BussinessController\obj\Debug\WCF.BussinessController.pdb
+D:\BV Source\benhvienSource\WCF.BussinessController\bin\Debug\WCF.BussinessController.dll.config
+D:\BV Source\benhvienSource\WCF.BussinessController\bin\Debug\WCF.BussinessController.dll
+D:\BV Source\benhvienSource\WCF.BussinessController\bin\Debug\WCF.BussinessController.pdb
+D:\BV Source\benhvienSource\WCF.BussinessController\bin\Debug\DataBenhVien.dll
+D:\BV Source\benhvienSource\WCF.BussinessController\bin\Debug\EntityFramework.dll
+D:\BV Source\benhvienSource\WCF.BussinessController\bin\Debug\EntityFramework.SqlServer.dll
+D:\BV Source\benhvienSource\WCF.BussinessController\bin\Debug\WCF.BussinessObject.dll
+D:\BV Source\benhvienSource\WCF.BussinessController\bin\Debug\DataBenhVien.pdb
+D:\BV Source\benhvienSource\WCF.BussinessController\bin\Debug\WCF.BussinessObject.pdb
+D:\BV Source\benhvienSource\WCF.BussinessController\bin\Debug\EntityFramework.xml
+D:\BV Source\benhvienSource\WCF.BussinessController\bin\Debug\EntityFramework.SqlServer.xml
+D:\BV Source\benhvienSource\WCF.BussinessController\obj\Debug\WCF.BussinessController.csprojResolveAssemblyReference.cache
+D:\BV Source\benhvienSource\WCF.BussinessController\obj\Debug\WCF.BussinessController.dll
+D:\BV Source\benhvienSource\WCF.BussinessController\obj\Debug\WCF.BussinessController.pdb

@@ -1,0 +1,51 @@
+﻿@model List<WCF.BussinessObject.EntityObject.MedicalObject>
+@{
+    ViewBag.Title = "AdminMedical";
+    Layout = "~/Areas/admin/Views/Shared/LayOut.cshtml";
+}
+
+<div class="box">
+    <div class="box-header">
+        <h3 class="box-title">Quản Trị Thanh Khoa Khám Chữa</h3>
+    </div>
+    <!-- /.box-header -->
+    <div class="box-body">
+        <div id="example1_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="dataTables_length" id="example1_length">
+                        @Html.ActionLink("Thêm Mới", "AddMedicalView", "AddMedical", null, new { @class = "btn btn-success" })
+                    </div>
+                </div>
+            </div><div class="row">
+                <div class="col-sm-12">
+                    <table id="example1" class="table table-bordered table-striped dataTable" role="grid" aria-describedby="example1_info" style="width:100%;height:80%">
+                        <thead>
+                            <tr role="row">
+                                <th class="sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending" style="width: 177px;">@Html.DisplayNameFor(m => m.SingleOrDefault().Image)</th>
+                                <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending" style="width: 224px;">@Html.DisplayNameFor(m => m.SingleOrDefault().Name)</th>
+                                <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending" style="width: 205px;">@Html.DisplayNameFor(m => m.SingleOrDefault().Description)</th>
+                                <th tabindex="0" aria-controls="example1" rowspan="1" colspan="2" style="width: 100px;">Thao Tác</th>
+                            </tr>
+                        </thead>
+                        @foreach (var item in Model)
+                        {
+                            <tbody>
+                                <tr role="row" class="odd">
+                                    <td class="sorting_1"><img src="@item.Image" style="width:150px; height:100px"></td>
+                                    <td>@item.Name</td>
+                                    <td>@item.Description</td>
+                                    <td>
+                                        @Html.ActionLink("Sửa", "RedirectToEditMedical", "EditMedical", new { id = item.ID }, new { @class = "btn btn-info " })
+                                        @Html.ActionLink("Xóa", "DeleteMedical_clk", "EditMedical", new { id = item.ID }, new { @class = "btn btn-warning" })
+                                    </td>
+                                </tr>
+                            </tbody>
+                        }
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.box-body -->
+</div>

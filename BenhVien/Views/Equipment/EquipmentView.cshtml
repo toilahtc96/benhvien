@@ -1,0 +1,42 @@
+﻿@model List<WCF.BussinessObject.EntityObject.EquipmentObject>
+<div class="row">
+    <div class="col-md-12">
+        <div id="portfolio">
+            <ul class="items list-unstyled clearfix animated fadeInRight showing" data-animation="fadeInRight" style="position: relative;  ">
+                @{ int i = 0;
+                    foreach (var item in Model)
+                    {
+                        if (i % 2 == 0)
+                        {
+                <li class="item branding">
+                    <a data="/Doi-ngu-y-ta-349122" class="fancybox SHOW_popup">
+                        <img src="@item.Image" alt="@item.Name">
+                        <div class="overlay">
+                            <div class="dv-table">
+                                <div class="dv-table-cell">
+                                    <span>@item.Name</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>      }
+                        if (i%2 != 0){
+                            <li class="item photography">
+                                <a data="/Phong-khach-Thien-Hoa-349117" class="fancybox SHOW_popup">
+                                    <img src="@item.Image" alt="@item.Name">
+                                    <div class="overlay">
+                                        <div class="dv-table">
+                                            <div class="dv-table-cell">
+                                                <span>@item.Name</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        }
+                    }
+                }
+            </ul>
+        </div>
+    </div>
+</div>

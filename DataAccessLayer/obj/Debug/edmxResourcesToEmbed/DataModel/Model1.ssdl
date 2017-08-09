@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="furniShopModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="SP_Colors_DELETE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ColorID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="SP_Colors_GetAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_Colors_GetByColorID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ColorID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="SP_Colors_INSERT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ColorID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="ColorName" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_Colors_UPDATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ColorID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="ColorName" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_Companys_DELETE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CompanyID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="SP_Companys_GetAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_Companys_GetByCompanyID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CompanyID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="SP_Companys_INSERT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CompanyID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="CompanyName" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_Companys_UPDATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CompanyID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="CompanyName" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_Contacts_DELETE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ContactID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="SP_Contacts_GetAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_Contacts_GetByContactID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ContactID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="SP_Contacts_INSERT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ContactID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="Name" Type="varchar" Mode="In" />
+    <Parameter Name="Email" Type="varchar" Mode="In" />
+    <Parameter Name="Phone" Type="varchar" Mode="In" />
+    <Parameter Name="Message" Type="varchar" Mode="In" />
+    <Parameter Name="CreateDate" Type="date" Mode="In" />
+  </Function>
+  <Function Name="SP_Contacts_UPDATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ContactID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="Name" Type="varchar" Mode="In" />
+    <Parameter Name="Email" Type="varchar" Mode="In" />
+    <Parameter Name="Phone" Type="varchar" Mode="In" />
+    <Parameter Name="Message" Type="varchar" Mode="In" />
+    <Parameter Name="CreateDate" Type="date" Mode="In" />
+  </Function>
+  <Function Name="SP_Countrys_DELETE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ContryID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="SP_Countrys_GetAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_Countrys_GetByContryID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ContryID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="SP_Countrys_INSERT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ContryID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="ContryName" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_Countrys_UPDATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ContryID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="ContryName" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_Footers_DELETE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FooterID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="SP_Footers_GetAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_Footers_GetByFooterID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FooterID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="SP_Footers_INSERT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FooterID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="FooterName" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_Footers_UPDATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FooterID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="FooterName" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_ImageProducts_DELETE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ImageProductID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="SP_ImageProducts_GetAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_ImageProducts_GetByImageProductID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ImageProductID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="SP_ImageProducts_INSERT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ImageProductID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="ProductID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="URL" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_ImageProducts_UPDATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ImageProductID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="ProductID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="URL" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_Images_DELETE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ImageID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="SP_Images_GetAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_Images_GetByImageID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ImageID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="SP_Images_INSERT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ImageID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="URL" Type="varchar" Mode="In" />
+    <Parameter Name="BannerFlag" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="SP_Images_UPDATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ImageID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="URL" Type="varchar" Mode="In" />
+    <Parameter Name="BannerFlag" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="SP_MenuGroups_DELETE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MenuGroupID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="SP_MenuGroups_GetAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_MenuGroups_GetByMenuGroupID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MenuGroupID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="SP_MenuGroups_INSERT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MenuGroupID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="MenuGroupName" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_MenuGroups_UPDATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MenuGroupID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="MenuGroupName" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_MenuItems_DELETE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MenuItemID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="SP_MenuItems_GetAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_MenuItems_GetByMenuItemID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MenuItemID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="SP_MenuItems_INSERT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MenuItemID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="MenuItemName" Type="varchar" Mode="In" />
+    <Parameter Name="Position" Type="int" Mode="In" />
+    <Parameter Name="URL" Type="varchar" Mode="In" />
+    <Parameter Name="GroupID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="SP_MenuItems_UPDATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MenuItemID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="MenuItemName" Type="varchar" Mode="In" />
+    <Parameter Name="Position" Type="int" Mode="In" />
+    <Parameter Name="URL" Type="varchar" Mode="In" />
+    <Parameter Name="GroupID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="SP_OrderDetails_DELETE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="OrderDetailID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="SP_OrderDetails_GetAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_OrderDetails_GetByOrderDetailID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="OrderDetailID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="SP_OrderDetails_INSERT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="OrderDetailID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="ProductID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="OrderID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="Quantity" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_OrderDetails_UPDATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="OrderDetailID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="ProductID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="OrderID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="Quantity" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_Orders_DELETE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="OrderID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="SP_Orders_GetAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_Orders_GetByOrderID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="OrderID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="SP_Orders_INSERT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="OrderID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="UserID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="DateTime" Type="date" Mode="In" />
+  </Function>
+  <Function Name="SP_Orders_UPDATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="OrderID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="UserID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="DateTime" Type="date" Mode="In" />
+  </Function>
+  <Function Name="SP_ProductCategorys_DELETE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ProductCategoryID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="SP_ProductCategorys_GetAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_ProductCategorys_GetByProductCategoryID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ProductCategoryID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="SP_ProductCategorys_INSERT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ProductCategoryID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="CategoryName" Type="varchar" Mode="In" />
+    <Parameter Name="Description" Type="varchar(max)" Mode="In" />
+  </Function>
+  <Function Name="SP_ProductCategorys_UPDATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ProductCategoryID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="CategoryName" Type="varchar" Mode="In" />
+    <Parameter Name="Description" Type="varchar(max)" Mode="In" />
+  </Function>
+  <Function Name="SP_ProductColors_DELETE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ProductColorID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="SP_ProductColors_GetAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_ProductColors_GetByProductColorID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ProductColorID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="SP_ProductColors_INSERT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ProductColorID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="ColorID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="ProductID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="SP_ProductColors_UPDATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ProductColorID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="ColorID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="ProductID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="SP_Products_DELETE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ProductID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="SP_Products_GetAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_Products_GetByProductID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ProductID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="SP_Products_INSERT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ProductID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="ProductName" Type="varchar" Mode="In" />
+    <Parameter Name="Price" Type="decimal" Mode="In" />
+    <Parameter Name="HomeFlag" Type="bit" Mode="In" />
+    <Parameter Name="Size" Type="varchar" Mode="In" />
+    <Parameter Name="Detail" Type="varchar(max)" Mode="In" />
+    <Parameter Name="Sale" Type="float" Mode="In" />
+    <Parameter Name="CompanyID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="CategoryID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="SP_Products_UPDATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ProductID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="ProductName" Type="varchar" Mode="In" />
+    <Parameter Name="Price" Type="decimal" Mode="In" />
+    <Parameter Name="HomeFlag" Type="bit" Mode="In" />
+    <Parameter Name="Size" Type="varchar" Mode="In" />
+    <Parameter Name="Detail" Type="varchar(max)" Mode="In" />
+    <Parameter Name="Sale" Type="float" Mode="In" />
+    <Parameter Name="CompanyID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="CategoryID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="SP_ProductTags_DELETE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ProductTagID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="SP_ProductTags_GetAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_ProductTags_GetByProductTagID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ProductTagID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="SP_ProductTags_INSERT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ProductTagID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="ProductID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="TagID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="SP_ProductTags_UPDATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ProductTagID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="ProductID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="TagID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="SP_Roles_DELETE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="RoleID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="SP_Roles_GetAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_Roles_GetByRoleID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="RoleID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="SP_Roles_INSERT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="RoleID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="RoleName" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_Roles_UPDATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="RoleID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="RoleName" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_ShopAddress_DELETE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ShopAddressID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="SP_ShopAddress_GetAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_ShopAddress_GetByShopAddressID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ShopAddressID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="SP_ShopAddress_INSERT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ShopAddressID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="Address" Type="varchar(max)" Mode="In" />
+  </Function>
+  <Function Name="SP_ShopAddress_UPDATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ShopAddressID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="Address" Type="varchar(max)" Mode="In" />
+  </Function>
+  <Function Name="SP_Tags_DELETE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TagID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="SP_Tags_GetAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_Tags_GetByTagID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TagID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="SP_Tags_INSERT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TagID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="TagName" Type="varchar" Mode="In" />
+    <Parameter Name="Type" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_Tags_UPDATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TagID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="TagName" Type="varchar" Mode="In" />
+    <Parameter Name="Type" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_Users_DELETE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="SP_Users_GetAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_Users_GetByUserID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="SP_Users_INSERT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="FirstName" Type="varchar" Mode="In" />
+    <Parameter Name="LastName" Type="varchar" Mode="In" />
+    <Parameter Name="Email" Type="varchar" Mode="In" />
+    <Parameter Name="PassWord" Type="varchar" Mode="In" />
+    <Parameter Name="Mobile" Type="varchar" Mode="In" />
+    <Parameter Name="Address" Type="varchar" Mode="In" />
+    <Parameter Name="RoleID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="SP_Users_UPDATE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="FirstName" Type="varchar" Mode="In" />
+    <Parameter Name="LastName" Type="varchar" Mode="In" />
+    <Parameter Name="Email" Type="varchar" Mode="In" />
+    <Parameter Name="PassWord" Type="varchar" Mode="In" />
+    <Parameter Name="Mobile" Type="varchar" Mode="In" />
+    <Parameter Name="Address" Type="varchar" Mode="In" />
+    <Parameter Name="RoleID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <EntityContainer Name="furniShopModelStoreContainer" />
+</Schema>

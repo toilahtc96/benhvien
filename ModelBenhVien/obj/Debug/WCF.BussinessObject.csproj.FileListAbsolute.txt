@@ -1,0 +1,19 @@
+D:\Xulianh\ModelBenhVien\bin\Debug\WCF.BussinessObject.dll.config
+D:\Xulianh\ModelBenhVien\bin\Debug\WCF.BussinessObject.dll
+D:\Xulianh\ModelBenhVien\bin\Debug\WCF.BussinessObject.pdb
+D:\Xulianh\ModelBenhVien\bin\Debug\EntityFramework.dll
+D:\Xulianh\ModelBenhVien\bin\Debug\EntityFramework.SqlServer.dll
+D:\Xulianh\ModelBenhVien\bin\Debug\EntityFramework.xml
+D:\Xulianh\ModelBenhVien\bin\Debug\EntityFramework.SqlServer.xml
+D:\Xulianh\ModelBenhVien\obj\Debug\WCF.BussinessObject.dll
+D:\Xulianh\ModelBenhVien\obj\Debug\WCF.BussinessObject.pdb
+D:\BV Source\benhvienSource\ModelBenhVien\bin\Debug\WCF.BussinessObject.dll.config
+D:\BV Source\benhvienSource\ModelBenhVien\bin\Debug\WCF.BussinessObject.dll
+D:\BV Source\benhvienSource\ModelBenhVien\bin\Debug\WCF.BussinessObject.pdb
+D:\BV Source\benhvienSource\ModelBenhVien\bin\Debug\EntityFramework.dll
+D:\BV Source\benhvienSource\ModelBenhVien\bin\Debug\EntityFramework.SqlServer.dll
+D:\BV Source\benhvienSource\ModelBenhVien\bin\Debug\EntityFramework.xml
+D:\BV Source\benhvienSource\ModelBenhVien\bin\Debug\EntityFramework.SqlServer.xml
+D:\BV Source\benhvienSource\ModelBenhVien\obj\Debug\WCF.BussinessObject.csprojResolveAssemblyReference.cache
+D:\BV Source\benhvienSource\ModelBenhVien\obj\Debug\WCF.BussinessObject.dll
+D:\BV Source\benhvienSource\ModelBenhVien\obj\Debug\WCF.BussinessObject.pdb

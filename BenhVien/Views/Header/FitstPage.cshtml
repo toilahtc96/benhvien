@@ -1,0 +1,15 @@
+﻿@model WCF.BussinessObject.EntityObject.ServiceObject
+<section id="home">
+    <div class="banner-container">
+        @{
+            var imglink = Model.BackGround;
+                            <img src="@Model.BackGround" alt="@Model.Slogan" />
+            <div class="container banner-content">
+                <div class="hero-text animated fadeInDownBig">
+                    <h1 class="responsive-headline">@Model.Slogan</h1>
+                    <a href="#basics" class="arrow-link"> <i class="fa fa-arrow-circle-down fa-2x"></i> </a>
+                </div>
+            </div>
+        }
+    </div>
+</section>

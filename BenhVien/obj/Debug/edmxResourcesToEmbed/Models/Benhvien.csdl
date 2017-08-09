@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="benhvienModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="benhvienEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Doctors" EntityType="benhvienModel.Doctor" />
+    <EntitySet Name="Equipments" EntityType="benhvienModel.Equipment" />
+    <EntitySet Name="Feedbacks" EntityType="benhvienModel.Feedback" />
+    <EntitySet Name="Medicals" EntityType="benhvienModel.Medical" />
+    <EntitySet Name="Menus" EntityType="benhvienModel.Menu" />
+    <EntitySet Name="Services" EntityType="benhvienModel.Service" />
+    <EntitySet Name="sysdiagrams" EntityType="benhvienModel.sysdiagram" />
+    <AssociationSet Name="FK_Doctors_Medicals" Association="benhvienModel.FK_Doctors_Medicals">
+      <End Role="Medical" EntitySet="Medicals" />
+      <End Role="Doctor" EntitySet="Doctors" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Doctor">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Images" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Status" Type="Boolean" Nullable="false" />
+    <Property Name="IDkhoa" Type="Int32" Nullable="false" />
+    <Property Name="MedicalName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Medical" Relationship="benhvienModel.FK_Doctors_Medicals" FromRole="Doctor" ToRole="Medical" />
+  </EntityType>
+  <EntityType Name="Equipment">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Details" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Images" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Feedback">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CustommerName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Skype" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="Medical">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Images" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Doctors" Relationship="benhvienModel.FK_Doctors_Medicals" FromRole="Medical" ToRole="Doctor" />
+  </EntityType>
+  <EntityType Name="Menu">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LogoImage" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MenuItem1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MenuItem2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MenuItem3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MenuItem4" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MenuItem5" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MenuItem6" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BackGround" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Slogan" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Service">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TitleDichvu" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="TitleGioiThieu" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="TitlePhongKham" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="TitleCosovatchat" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="TitleChuyenkhoa" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="TitleLienhe" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="DescriptionDichvu" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DescriptionGioithieu" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DescriptionPhongkham" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DescriptionCosovatchat" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DescriptionChuyenKhoa" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DescriptionLienHe" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DetailDichvu" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="DetailGioithieu" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="DetailPhongkham" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="DetailCosovatchat" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="DetailChuyenkhoa" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="DetailLienhe" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Images" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="HotLine" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Phone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <Association Name="FK_Doctors_Medicals">
+    <End Type="benhvienModel.Medical" Role="Medical" Multiplicity="1" />
+    <End Type="benhvienModel.Doctor" Role="Doctor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Medical">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Doctor">
+        <PropertyRef Name="IDkhoa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

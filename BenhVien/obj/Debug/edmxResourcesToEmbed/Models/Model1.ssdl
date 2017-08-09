@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="benhvienModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Doctors">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Images" Type="varchar" MaxLength="50" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="Status" Type="bit" Nullable="false" />
+    <Property Name="IDkhoa" Type="int" Nullable="false" />
+    <Property Name="MedicalName" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Equipments">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Details" Type="nvarchar(max)" />
+    <Property Name="Images" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Feedbacks">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CustommerName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PhoneNumber" Type="varchar" MaxLength="20" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="Skype" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreateDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Medicals">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="500" />
+    <Property Name="Images" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Menu">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LogoImage" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="MenuItem1" Type="nvarchar" MaxLength="50" />
+    <Property Name="MenuItem2" Type="nvarchar" MaxLength="50" />
+    <Property Name="MenuItem3" Type="nvarchar" MaxLength="50" />
+    <Property Name="MenuItem4" Type="nvarchar" MaxLength="50" />
+    <Property Name="MenuItem5" Type="nvarchar" MaxLength="50" />
+    <Property Name="MenuItem6" Type="nvarchar" MaxLength="50" />
+    <Property Name="MenuItem7" Type="nvarchar" MaxLength="50" />
+    <Property Name="BackGround" Type="varchar" MaxLength="50" />
+    <Property Name="Slogan" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Services">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TitleDichvu" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="TitleGioiThieu" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="TitlePhongKham" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="TitleCosovatchat" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="TitleChuyenkhoa" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="TitleLienhe" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="DescriptionDichvu" Type="nvarchar(max)" />
+    <Property Name="DescriptionGioithieu" Type="nvarchar(max)" />
+    <Property Name="DescriptionPhongkham" Type="nvarchar(max)" />
+    <Property Name="DescriptionCosovatchat" Type="nvarchar(max)" />
+    <Property Name="DescriptionChuyenKhoa" Type="nvarchar(max)" />
+    <Property Name="DescriptionLienHe" Type="nvarchar(max)" />
+    <Property Name="DetailDichvu" Type="nvarchar" MaxLength="100" />
+    <Property Name="DetailGioithieu" Type="nvarchar" MaxLength="100" />
+    <Property Name="DetailPhongkham" Type="nvarchar" MaxLength="100" />
+    <Property Name="DetailCosovatchat" Type="nvarchar" MaxLength="100" />
+    <Property Name="DetailChuyenkhoa" Type="nvarchar" MaxLength="100" />
+    <Property Name="DetailLienhe" Type="nvarchar" MaxLength="100" />
+    <Property Name="Images" Type="varchar" MaxLength="50" />
+    <Property Name="Address" Type="nvarchar(max)" />
+    <Property Name="HotLine" Type="varchar" MaxLength="20" />
+    <Property Name="Phone" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="80" Nullable="false" />
+    <Property Name="PassWord" Type="nvarchar" MaxLength="80" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Doctors_Medicals">
+    <End Role="Medicals" Type="Self.Medicals" Multiplicity="1" />
+    <End Role="Doctors" Type="Self.Doctors" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Medicals">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Doctors">
+        <PropertyRef Name="IDkhoa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="benhvienModelStoreContainer">
+    <EntitySet Name="Doctors" EntityType="Self.Doctors" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Equipments" EntityType="Self.Equipments" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Feedbacks" EntityType="Self.Feedbacks" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Medicals" EntityType="Self.Medicals" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Menu" EntityType="Self.Menu" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Services" EntityType="Self.Services" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Doctors_Medicals" Association="Self.FK_Doctors_Medicals">
+      <End Role="Medicals" EntitySet="Medicals" />
+      <End Role="Doctors" EntitySet="Doctors" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
